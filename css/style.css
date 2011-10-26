@@ -253,6 +253,7 @@ nav li a:hover { color: #bfb931; }
 footer { height: 73px; background: #434343 url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
 footer a, footer a:visited { color: #bfb931; text-decoration: none; }
 footer div { float: right; text-align: right; }
+footer p { margin: 10px 0; }
 footer > p { margin-top: 40px; }
 
 .highlight { color: #bfb931; }

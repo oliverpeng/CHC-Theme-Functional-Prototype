@@ -1,7 +1,8 @@
-/* Author: 
+/* Author: Oliver Peng (oliverpeng@gmail.com)
 
 */
 
+/* Toggle buttons shows or hides text bubble below it */
 $(document).ready( function() {
     $('.toggle-button').click( function() {
         var $this = $(this);
@@ -16,7 +17,22 @@ $(document).ready( function() {
     });
 });
 
+/* jQuery UI Tabs behavior on item with id 'tabs' */
+$(document).ready( function() {   
+    $("#tabs").tabs({
+        'select': function(event, ui) {
+            // update URL based on which tab was selected
+            window.location.hash = ui.tab.hash;
+        }
+    });
+    
+    $(window).hashchange( function(){
+        var hash = location.hash;
+        $('#tabs').tabs('select', hash);
+    });
+});
 
+/* Dynamically resize page depending on viewport */
 $(document).ready( function() {
     var $window = $(window);
     var $container = $('#container');
