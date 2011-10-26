@@ -1,4 +1,4 @@
-#main { background: #d2d2d2 url('../img/backgrounds/join.jpg') no-repeat top left; font-size: 0.85em; position: relative; }
+#main { background: #2f2f2f url('../img/backgrounds/join.jpg') no-repeat top left; font-size: 0.85em; position: relative; }
 #main > h2 { background-position: 0 -168px; margin-bottom: 0; }
 
 .leftcol, .rightcol { width: 46%; text-align: center; margin-top: 50px; }

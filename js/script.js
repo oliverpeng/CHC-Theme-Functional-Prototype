@@ -18,9 +18,20 @@ $(document).ready( function() {
 
 
 $(document).ready( function() {
-    var defaultHeight = $('#container').height();
-    var defaultWidth = $('#container').width();
     var $window = $(window);
+    var $container = $('#container');
+    var $main = $('#main');
+    
+    if($container.hasClass('no-resize')) {
+        return;
+    }
+    
+    var defaultHeight = $container.height();
+    var defaultWidth = $container.width();
+    
+    var hPadding = $main.innerWidth() - $main.width();
+    var vPadding = $main.innerHeight() - $main.height();
+    var innerHeights = $('header').innerHeight() + $('nav').innerHeight() + $('footer').innerHeight();
     
     $window.resize( function(e) {
         var newHeight = $window.height();
@@ -29,33 +40,12 @@ $(document).ready( function() {
         } else {
             var scale = newHeight / defaultHeight;
             var newWidth = Math.floor(scale*defaultWidth);
-            console.log(newWidth);
-            $('#container').width( newWidth );
-            $('#container').height( newHeight );
             
-            var $main = $('#main');
-            var hPadding = $main.innerWidth() - $main.width();
-            var vPadding = $main.innerHeight() - $main.height();
+            $container.width( newWidth );
+            $container.height( newHeight );
+            
             $main.width( newWidth - hPadding );
-            $main.height( newHeight - $('header').innerHeight() - $('nav').innerHeight() - $('footer').innerHeight() - vPadding - 1);
+            $main.height( newHeight - innerHeights - vPadding );
         }
     }).resize();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

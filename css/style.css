@@ -30,9 +30,10 @@ audio:not([controls]) { display: none; }
  * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 
+* { margin:0; padding: 0; }
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 15px; line-height: 1.231; }
+body { font-size: 15px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
@@ -215,7 +216,7 @@ h2, h3, h4, h5, h6 { color: #484848; margin: 0; }
 h2 { text-transform: uppercase; font-size: 36px; margin-bottom: 10px;  }
 
 #container { width: 1050px; margin: 0 auto; }
-header { height: 121px; padding: 15px 10px 0 25px; background: url('../img/bg-header.jpg') no-repeat top left; position: relative; background-size: cover; }
+header { height: 121px; padding: 15px 10px 0 25px; background: #454545 url('../img/bg-header.jpg') no-repeat top left; position: relative; background-size: cover; }
 #logo { margin: 0; float: left; }
 #logo a { display: block; height: 109px; width: 297px; background: url('../img/logo.png') no-repeat top left; }
 #search { float: right; width: 232px; height: 42px; padding: 0 15px 0 42px; color: #fff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url('../img/search-bar.png') no-repeat top left; border: none;  }
@@ -246,10 +247,10 @@ nav li a, nav li a:visited { display: block; text-decoration: none; color: #fff;
 nav li a.active { background-color: #504c4c; color: #bfb931; }
 nav li a:hover { color: #bfb931; }
 
-#main { background-color: #d2d2d2; padding: 0; height: 603px; padding: 12px 20px; width: 1010px; overflow: auto; background-size: cover !important; }
+#main { background-color: #2f2f2f; padding: 0; height: 603px; padding: 12px 20px; width: 1010px; overflow: auto; background-size: cover !important; }
 #main > h2 { background: transparent url(../img/page-icons.png) no-repeat 0 0; padding-top: 12px; padding-left: 60px; }
 
-footer { height: 73px; background: url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
+footer { height: 73px; background: #434343 url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
 footer a, footer a:visited { color: #bfb931; text-decoration: none; }
 footer div { float: right; text-align: right; }
 footer > p { margin-top: 40px; }

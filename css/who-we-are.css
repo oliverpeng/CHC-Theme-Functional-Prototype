@@ -1,4 +1,4 @@
-#main { background: #d2d2d2 url('../img/backgrounds/who-we-are.jpg') no-repeat top left; font-size: 0.85em; }
+#main { background: #2f2f2f url('../img/backgrounds/who-we-are.jpg') no-repeat top left; font-size: 0.85em; }
 #main > h2 { background-position: 0 -56px; margin-bottom: 0; }
 
 .fl { float: left; }
