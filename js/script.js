@@ -18,7 +18,11 @@ $(document).ready( function() {
 });
 
 /* jQuery UI Tabs behavior on item with id 'tabs' */
-$(document).ready( function() {   
+$(document).ready( function() {
+    if (!$.fn.tabs) {
+        return;
+    }
+    
     $("#tabs").tabs({
         'select': function(event, ui) {
             // update URL based on which tab was selected
