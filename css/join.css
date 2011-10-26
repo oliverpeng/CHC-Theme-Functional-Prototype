@@ -1,0 +1,44 @@
+#main { background: #d2d2d2 url('../img/backgrounds/join.jpg') no-repeat top left; }
+
+h3 { font-size: 23px; }
+h4 { font-size: 20px; margin-bottom: 10px; }
+#signup div.clearfix { padding: 17px 37px 0 37px; }
+.leftcol, .rightcol { width: 385px; }
+.leftcol { float: left; }
+.rightcol { float: right; }
+
+iframe { border: 8px solid #cac141; }
+
+#signup .centered { text-align: center; }
+#signup .redbutton { padding: 10px 50px; }
+#signup a:not(.redbutton) { text-decoration: underline; color: #beb931; }
+#signup a:not(.redbutton):visited { color: #beb931; }
+
+#get-involved .leftcol { width: 220px; float: left; }
+#get-involved .rightcol { float: left; margin-left: 20px; }
+
+#get-involved .redbutton, #get-involved .greenbutton { display: block; text-align: center;  }
+#get-involved .greenbutton:last-child { font-size: 0.85em; }
+
+#get-involved .toggle-button { width: 232px; }
+#get-involved .textbubble-outside { margin-left: 15px; }
+#get-involved .textbubble { padding: 10px; }
+
+#get-involved ul { padding: 0; margin: 0; }
+#get-involved .spreadword li { padding-left: 30px; list-style: none; color: #fff; font-weight: bold; margin-bottom: 5px; background: url(../img/icons.png) no-repeat 0 0; }
+#get-involved .spreadword li:nth-child(2) { background-position: 0 -24px; }
+#get-involved .spreadword li:nth-child(3) { background-position: 0 -48px; }
+#get-involved .spreadword li:nth-child(4) { background-position: 0 -104px; }
+#get-involved li:last-child { margin-bottom: 0; }
+#get-involved .textbubble { color: #fff; }
+#get-involved input { font-size: 13px; }
+#get-involved input[type=email] { width: 197px; margin-top: 3px; }
+#get-involved input[type=submit] { background-color: #373737; border: none; color: #fff; padding: 3px 8px; margin-left: 5px; }
+#get-involved .volunteer li { color: #373737; margin-left: 37px; font-size: 0.85em; }
+#get-involved .volunteer p { margin: 5px 0; }
+#get-involved .volunteer a { color: #373737; }
+
+#affiliates img { border: 1px solid #dbdbdb; }
+#affiliates a, #affiliates a:visited { color: #484848; }
+#affiliates td { padding: 0 15px 30px 0; }
+#affiliates .highlight { font-weight: bold; }

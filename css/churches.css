@@ -1,0 +1,9 @@
+#main { background: #d2d2d2 url('../img/backgrounds/join.jpg') no-repeat top left; font-size: 0.85em; position: relative; }
+#main > h2 { background-position: 0 -168px; margin-bottom: 0; }
+
+.leftcol, .rightcol { width: 46%; text-align: center; margin-top: 50px; }
+.leftcol { float: left; }
+.rightcol { float: right; }
+.leftcol div, .rightcol div { height: 290px; }
+
+.greenbutton { width: 120px; }

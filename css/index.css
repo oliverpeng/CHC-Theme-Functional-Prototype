@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'DowncomeRegular';
+  src: url('../fonts/downcome/downcome-webfont.eot');
+  src: url('../fonts/downcome/downcome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/downcome/downcome-webfont.ttf') format('truetype'),
+       url('../fonts/downcome/downcome-webfont.woff') format('woff'),
+       url('../fonts/downcome/downcome-webfont.svg#DowncomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('../fonts/museosans/MuseoSans_500-webfont.eot');
+    src: url('../fonts/museosans/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans/MuseoSans_500-webfont.woff') format('woff'),
+         url('../fonts/museosans/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('../fonts/museosans/MuseoSans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h3 { text-transform: uppercase; font-size: 36px; margin-bottom: 8px; line-height: 35px; }
+h4, h5 { font-size: 24px; }
+aside q { color: #373737; font-size: 48px; font-family: MuseoSans500, sans-serif; letter-spacing: 1px; line-height: 45px; }
+aside q:before { content: "“"; color: #7c8624; font-family: Arial, sans-serif; }
+aside q:after { content: "”"; color: #7c8624; font-family: Arial, sans-serif; }
+
+#main { position: relative; padding: 0; height: 627px; width: 1050px; }
+#slide_nav { position: absolute; bottom: 13px; left: 57px; z-index: 100; background-color: rgba(255,255,255,0.6); padding: 10px 20px; -moz-border-radius: 24px; -webkit-border-radius: 24px; border-radius: 24px; border: 6px solid rgba(0,0,0,0.6); }
+#slide_nav a { display: inline-block; width: 15px; height: 15px; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; margin-right: 7px; text-indent: -9999px; background-color: #2f2f2f; }
+#slide_nav a:last-child { margin-right: 0; }
+#slide_nav a:focus { outline: none; }
+#slide_nav a.activeSlide {
+  background: #bdb933;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0.1, #a5af4b), color-stop(1, #7c8624));
+  background-image: -moz-linear-gradient(center top, #a5af4b 10%, #7c8624 100%);
+}
+
+#slides > article { height: 627px; padding: 0; width: 1050px; }
+.slide2, .slide3, .slide4 { display: none; }
+
+.slide1 { background: url('../img/backgrounds/home/slide1.jpg') no-repeat top left; }
+.slide1 > div { width: 500px; float: left; }
+.slide1 div:nth-child(1) { margin: 127px 0 0 40px; text-align: center; }
+.slide1 div:nth-child(2) { margin: 120px 0 0 10px; }
+.slide1 h3 { font-family: DowncomeRegular, sans-serif; font-size: 60px; line-height: 90px; color: #fff; margin: 0; margin-bottom: 40px; }
+.slide1 a { font-size: 24px; }
+.slide1 iframe { border: 9px solid #beb931; }
+
+.slide2 { background: url('../img/backgrounds/home/slide2.jpg') no-repeat top left; position: relative; }
+.slide2 .content { padding: 36px 80px; }
+.slide2 .leftcol { width: 410px; }
+.slide2 p { font-family: sans-serif; font-size: 18px; color: #383838; }
+.slide2 p:first-child { font-size: 24px; color: #fff; font-weight: bold; }
+.slide2 p:last-child { font-weight: bold; }
+.slide2 .greenbutton { float: right; }
+.slide2 aside { position: absolute; top: 47px; left: 655px; }
+
+.slide3 { background: url('../img/backgrounds/home/slide3.jpg') no-repeat top left; position: relative; }
+.slide3 .rightcol { width: 369px; position: absolute; top: 37px; left: 648px; }
+.slide3 .greenbutton { float: right; }
+.slide3 aside { position: absolute; top: 70px; left: 51px; }
+
+.slide4 { background: url('../img/backgrounds/home/slide4.jpg') no-repeat top left; position: relative; }
+.slide4 h3 { color: #fff; }
+.slide4 div { position: absolute; top: 87px; left: 231px; }

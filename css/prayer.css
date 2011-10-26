@@ -1,0 +1,46 @@
+#main { background: #d2d2d2 url('../img/backgrounds/prayer.jpg') no-repeat top left; font-size: 0.85em; position: relative; }
+#main > h2 { background-position: 0 -336px; margin-bottom: 0; }
+
+#content { margin-left: 62px; }
+
+#intro { width: 600px; }
+
+#read { background-image: none; }
+#modal { width: 950px; position: absolute; height: 545px; top: 50%; left: -9999px; margin-left: -490px; margin-top: -268px; background-color: #2f2f2f; padding: 15px; z-index: 2000;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+#close { display: block; width: 32px; height: 32px; background: url(../img/modal-close.png) no-repeat 0 0; cursor: pointer; position: absolute; right: -12px; top: -12px; z-index: 2001;}
+#close:hover { background-position: 0 -48px; }
+#batchgeo-map-1 { width: 657px; float: left; border: 5px solid #ccc; height: 536px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#modal article { float: right; width: 255px; }
+#modal article h2 { color: #b3b130; font-size: 19px; font-weight: normal; }
+#scrollbar1 .viewport { overflow: hidden; position: relative; height: 510px; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; color: #fff; font-size: 14px; }
+#scrollbar1 .thumb .end,
+#scrollbar1 .thumb { background-color: #beb931; }
+#scrollbar1 .scrollbar { position: relative; float: right; width: 15px; }
+#scrollbar1 .track { background-color: #515151; height: 100%; width:2px; position: relative; left: 3px; }
+#scrollbar1 .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbar1 .disable{ display: none; }
+#batchgeo-data-1 { margin: 0; padding: 0;}
+#batchgeo-data-1 li { list-style: none; margin-bottom: 15px; }
+#batchgeo-data-1 li:hover { color: #bdb933; }
+.author { font-style: italic; }
+address { display: inline; }
+#overlay { display: none; z-index: 1000; background-color: #fff; opacity: 0.6; position: absolute; top: 0; left: 0; width: 100%; height: 3000px; }
+
+#prayerform { margin-left: 13px; }
+#prayerform .textbubble { display: inline-block; padding: 15px; }
+#prayerform form { background-color: #fff; padding: 10px 20px; display: inline-block; }
+label { font-weight: bold; display: inline-block; width: 100px; text-align: right; padding: 2px 10px; }
+input, textarea { width: 300px; margin: 3px 0; }
+input.greenbutton { width: auto; float: right; }
+
+.toggle-button { width: 160px; font-weight: bold; }

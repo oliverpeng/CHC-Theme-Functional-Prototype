@@ -1,0 +1,23 @@
+#main { background: #d2d2d2 url('../img/backgrounds/who-we-are.jpg') no-repeat top left; font-size: 0.85em; }
+#main > h2 { background-position: 0 -56px; margin-bottom: 0; }
+
+.fl { float: left; }
+
+.textbubble-outside { margin-left: 59px; width: 85%; }
+.textbubble { padding: 10px 15px; }
+.toggle-button { margin-left: 46px; width: 190px; }
+.textbubble .overlay { background-color: #e0dd84; padding: 10px; }
+.greybubble { width: 190px; margin-left: 10px; }
+
+#james, #mark { float: left; width: 50%; }
+#james p, #mark p { margin: 5px 0; margin-left: 20px; }
+#james ul, #mark ul { padding: 0; margin: 2px 0; margin-left: 30px; }
+#james li, #mark li { background: url("../img/icons.png") no-repeat scroll 0 0 transparent; font-weight: bold; list-style: none; margin-bottom: 5px; padding-left: 30px; }
+#james li a, #james li a:visited, #mark li a, #mark li a:visited { color: #504c4c; }
+
+#staff { width: 40%; }
+dl { font-weight: bold; margin: 0; }
+dt { color: #fff; clear: left; }
+dt:after { content: ":"; }
+dt, dd { float: left; }
+dd { margin: 0; margin-left: 10px; }
