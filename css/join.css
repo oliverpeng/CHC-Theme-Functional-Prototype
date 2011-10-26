@@ -3,7 +3,7 @@
 h3 { font-size: 23px; }
 h4 { font-size: 20px; margin-bottom: 10px; }
 #signup div.clearfix { padding: 17px 37px 0 37px; }
-.leftcol, .rightcol { width: 50%; text-align: center; }
+.leftcol, .rightcol { width: 50%; }
 .leftcol { float: left; }
 .rightcol { float: right; }
 
@@ -13,6 +13,7 @@ iframe { border: 8px solid #cac141; }
 #signup .redbutton { padding: 10px 50px; }
 #signup a:not(.redbutton) { text-decoration: underline; color: #beb931; }
 #signup a:not(.redbutton):visited { color: #beb931; }
+#signup .leftcol, #signup .rightcol { text-align: center; }
 
 #get-involved .leftcol { width: 220px; float: left; }
 #get-involved .rightcol { float: left; margin-left: 20px; }

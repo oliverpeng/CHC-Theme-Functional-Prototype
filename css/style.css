@@ -301,9 +301,9 @@ footer > p { margin-top: 40px; }
 .no-js .toggle-button { background-image: none; cursor: auto; }
 .no-js .toggle-button:hover { color: #fff; }
 
-#main .ui-tabs { padding: 0; border: none; background: transparent; font-size: 1em; }
+#main .ui-tabs { padding: 0; border: none; background: transparent; font-size: 1em; height: 70%; }
 #main .ui-tabs-nav { background: transparent; border: none; }
-#main .ui-tabs-panel { border: 13px solid #beb931; background: rgba(255,255,255, 0.8); height: 430px; overflow: auto; }
+#main .ui-tabs-panel { border: 13px solid #beb931; background: rgba(255,255,255, 0.8); height: 430px; overflow: auto; height: 100%; }
 #main .ui-tabs-panel h2 { text-transform: none; font-size: 25px; margin-left: 0; }
 #main .ui-state-active a { color: #fff; }
 #main .ui-tabs .ui-tabs-nav li { margin-right: 8px; }
