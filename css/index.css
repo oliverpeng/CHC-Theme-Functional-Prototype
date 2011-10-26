@@ -66,3 +66,7 @@ aside q:after { content: "”"; color: #7c8624; font-family: Arial, sans-serif; 
 .slide4 { background: url('../img/backgrounds/home/slide4.jpg') no-repeat top left; position: relative; }
 .slide4 h3 { color: #fff; }
 .slide4 div { position: absolute; top: 87px; left: 231px; }
+
+.no-js #slides { overflow-x: hidden; }
+.no-js #slide_nav { display: none; }
+.no-js #slides > article { display: block; }

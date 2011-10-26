@@ -298,6 +298,8 @@ footer > p { margin-top: 40px; }
 .toggle-button { background: url("../img/togglebtn.png") no-repeat scroll 1px 6px #373737; cursor: pointer; }
 .toggle-button:hover { color: #bdb933; }
 .toggle-button.expand { background-position: 1px -22px; }
+.no-js .toggle-button { background-image: none; cursor: auto; }
+.no-js .toggle-button:hover { color: #fff; }
 
 #main .ui-tabs { padding: 0; border: none; background: transparent; font-size: 1em; }
 #main .ui-tabs-nav { background: transparent; border: none; }
@@ -311,6 +313,10 @@ footer > p { margin-top: 40px; }
 #main .ui-tabs .ui-state-default { border: none; background: none; }
 #main .ui-tabs .ui-state-active { padding: 0; }
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #484848; }
+.no-js #tabs ul { list-style: disc; padding: 0 0 0 13px; }
+.no-js #tabs ul a { color: #484848; font-size: 19px; font-weight: bold; text-decoration: underline; }
+.no-js #tabs > article { min-height: 430px; background: rgba(255,255,255,0.8); padding: 1em 1.4em; margin-bottom: 20px; border: 13px solid #beb931; }
+.no-js #tabs > article  h2.visuallyhidden { height: auto; position: static; width: auto; color: #BEB931; text-transform: none; margin-bottom: 20px; }
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

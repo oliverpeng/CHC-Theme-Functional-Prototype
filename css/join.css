@@ -3,7 +3,7 @@
 h3 { font-size: 23px; }
 h4 { font-size: 20px; margin-bottom: 10px; }
 #signup div.clearfix { padding: 17px 37px 0 37px; }
-.leftcol, .rightcol { width: 385px; }
+.leftcol, .rightcol { width: 50%; text-align: center; }
 .leftcol { float: left; }
 .rightcol { float: right; }
 
