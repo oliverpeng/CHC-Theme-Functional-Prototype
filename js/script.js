@@ -19,21 +19,22 @@ $(document).ready( function() {
 
 /* jQuery UI Tabs behavior on item with id 'tabs' */
 $(document).ready( function() {
-    if (!$.fn.tabs) {
-        return;
+    if ($.fn.tabs) {
+        $("#tabs").tabs({
+            'select': function(event, ui) {
+                // update URL based on which tab was selected
+                window.location.hash = ui.tab.hash;
+            }
+        });
     }
     
-    $("#tabs").tabs({
-        'select': function(event, ui) {
-            // update URL based on which tab was selected
-            window.location.hash = ui.tab.hash;
-        }
-    });
     
-    $(window).hashchange( function(){
-        var hash = location.hash;
-        $('#tabs').tabs('select', hash);
-    });
+    if ($.fn.hashchange) {
+        $(window).hashchange( function(){
+            var hash = location.hash;
+            $('#tabs').tabs('select', hash);
+        });
+    }
 });
 
 /* Dynamically resize page depending on viewport */
