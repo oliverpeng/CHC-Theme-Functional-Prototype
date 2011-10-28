@@ -256,6 +256,9 @@ footer div { float: right; text-align: right; }
 footer p { margin: 10px 0; }
 footer > p { margin-top: 40px; }
 
+/* ==|== custom non-semantic helper classes =================================
+   ========================================================================== */
+
 .highlight { color: #bfb931; }
 .white { color: #fff; }
 
@@ -302,23 +305,40 @@ footer > p { margin-top: 40px; }
 .no-js .toggle-button { background-image: none; cursor: auto; }
 .no-js .toggle-button:hover { color: #fff; }
 
-#main .ui-tabs { padding: 0; border: none; background: transparent; font-size: 1em; height: 70%; }
-#main .ui-tabs-nav { background: transparent; border: none; }
-#main .ui-tabs-panel { border: 13px solid #beb931; background: rgba(255,255,255, 0.8); height: 430px; overflow: auto; height: 100%; }
-#main .ui-tabs-panel h2 { text-transform: none; font-size: 25px; margin-left: 0; }
-#main .ui-state-active a { color: #fff; }
-#main .ui-tabs .ui-tabs-nav li { margin-right: 8px; }
-#main .ui-tabs .ui-tabs-nav li a  { background-color: #dcd867; padding: 7px 20px; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; }
-#main .ui-tabs .ui-tabs-nav li a:focus { outline: none; }
-#main .ui-tabs .ui-tabs-nav li.ui-tabs-selected a { background-color: #beb931; }
-#main .ui-tabs .ui-state-default { border: none; background: none; }
-#main .ui-tabs .ui-state-active { padding: 0; }
+/* ==|== jQuery UI style overrides ==========================================
+   ========================================================================== */
+
+.ui-widget { font-size: 13px; }
+
+.ui-tabs.ui-widget-content { padding: 0; border: none; background: transparent; font-size: 1em; height: 70%; }
+.ui-tabs .ui-tabs-nav { background: transparent; border: none; }
+.ui-tabs .ui-tabs-panel { border: 13px solid #beb931; background: rgba(255,255,255, 0.8); height: 430px; overflow: auto; height: 100%; }
+.ui-tabs .ui-tabs-panel h2 { text-transform: none; font-size: 25px; margin-left: 0; }
+.ui-tabs .ui-tabs-selected a, .ui-tabs .ui-tabs-selected a:link, .ui-tabs .ui-tabs-selected a:visited { color: #fff; }
+.ui-tabs .ui-tabs-nav li { margin-right: 8px; }
+.ui-tabs .ui-tabs-nav li a  { background-color: #dcd867; padding: 7px 20px; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; }
+.ui-tabs .ui-tabs-nav li a:focus { outline: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a { background-color: #beb931; }
+.ui-tabs .ui-state-default { border: none; background: none; }
+.ui-tabs .ui-state-active { padding: 0; }
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #484848; }
 .no-js #tabs ul { list-style: disc; padding: 0 0 0 13px; }
 .no-js #tabs ul a { color: #484848; font-size: 19px; font-weight: bold; text-decoration: underline; }
 .no-js #tabs > article { min-height: 430px; background: rgba(255,255,255,0.8); padding: 1em 1.4em; margin-bottom: 20px; border: 13px solid #beb931; }
 .no-js #tabs > article  h2.visuallyhidden { height: auto; position: static; width: auto; color: #BEB931; text-transform: none; margin-bottom: 20px; }
 
+.ui-widget-overlay { background: #fff; opacity: 0.6; }
+
+.ui-dialog {overflow: visible; }
+.ui-dialog.ui-widget-content { background: #2f2f2f; border: none;
+    -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px;
+}
+.ui-dialog .ui-widget-header { background: #2f2f2f; border: none; }
+.ui-dialog .ui-widget-header .ui-icon { background: url(../img/modal-close.png) no-repeat 0 0; }
+.ui-dialog .ui-dialog-titlebar-close.ui-state-hover { background: none; padding: 1px; border: none; }
+.ui-dialog .ui-dialog-titlebar-close { right: -4px; top: -7px; }
+.ui-dialog .ui-state-hover .ui-icon, .ui-dialog .ui-state-focus .ui-icon { background-image: none; background: url(../img/modal-close.png) no-repeat 0 -48px; }
+.ui-dialog .ui-icon-closethick { width: 32px; height: 32px;  }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */

@@ -1,33 +1,17 @@
 $(document).ready( function() {
-    var $modal = $('#modal');
-    var $overlay = $('#overlay');
-    var $window = $(window);
-    var open = false;
+    var $prayermap = $('#prayermap');
     
-    function openModal() {
-        $modal.css('left', '50%');
-        $overlay.show();
-        open = true;
-    }
-    
-    function closeModal() {
-        $modal.css('left', -9999);
-        $overlay.hide();
-        open = false;
-    }
-    
-    $('#read').click( openModal );
-    $('#close').click( closeModal );
-    $window.keypress( function(e) {
-        if(e.keyCode === 27) { // ESC
-            closeModal();
-        }
+    $prayermap.dialog({
+        autoOpen: false,
+        width: 1060,
+        height: 565,
+        modal: true,
+        resizable: false
     });
     
-    $window.resize( function(e) {
-        var height = Math.max( $window.height(), 900);
-        $overlay.height( height );
-    }).resize();
+    $('#read').click( function() {
+        $prayermap.dialog('open');
+    });
 });
 
 $(document).ready( function() {

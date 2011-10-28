@@ -23,6 +23,7 @@
 
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/prayer.css">
@@ -68,16 +69,15 @@
       </div>
         
       <a id="read" class="toggle-button">Read Other Prayers</a>
-      <div id="modal">
-        <a id="close" title="Close Dialog"></a>
-        <div id="batchgeo-map-1"></div>
+      <div id="prayermap" class="dialog">
+        <div id="batchgeo-map-prayers" data-batchgeo-height="100%"></div>
         <article>
           <h2>Prayers</h2>
           <div id="scrollbar1">
             <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
             <div class="viewport">
                 <div class="overview">
-                  <ul id="batchgeo-data-1">
+                  <ul id="batchgeo-data-prayers">
                     <li>My prayer is...<br><span class="author">Oliver from <address>Champaign, IL</address></span></li>
                     <li>My prayer is...<br><span class="author">Elizabeth from <address>New York, NY</address></span></li>
                     <li>My prayer is...<br><span class="author">Arisa from <address>Osaka, Japan</address></span></li>
@@ -143,6 +143,7 @@
 
 
   <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
   <script src="js/libs/jquery.tinyscrollbar.min.js"></script>
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
