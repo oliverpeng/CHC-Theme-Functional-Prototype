@@ -37,6 +37,22 @@ $(document).ready( function() {
     }
 });
 
+/* Contact lightbox */
+$(document).ready( function() {
+    var $contact = $('#contact-dialog');
+    $contact.dialog({
+        autoOpen: false,
+        width: 350,
+        height: 410,
+        modal: true,
+        resizable: false
+    });
+    
+    $('#footer-contact').click( function() {
+        $contact.dialog('open');
+    });
+});
+
 /* Dynamically resize page depending on viewport */
 $(document).ready( function() {
     var $window = $(window);

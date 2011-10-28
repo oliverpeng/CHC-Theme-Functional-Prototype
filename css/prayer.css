@@ -7,8 +7,8 @@
 
 #read { background-image: none; }
 
-#dialog { padding: 0 15px 15px 15px; display: none; }
-#map { float: left; width: 757px; background-color: #ccc; border: 5px solid #ccc;
+#dialog { padding: 0 15px 15px 15px; }
+#map { float: left; width: 757px; background-color: #ccc; border: 5px solid #ccc; color: #000;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -16,7 +16,7 @@
 #dialog article { float: right; width: 231px; height: 500px; }
 #dialog article h2 { color: #b3b130; font-size: 19px; font-weight: normal; }
 #scrollbar1 .viewport { overflow: hidden; position: relative; height: 475px; }
-#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; color: #fff; font-size: 14px; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; font-size: 14px; }
 #scrollbar1 .thumb .end,
 #scrollbar1 .thumb { background-color: #beb931; }
 #scrollbar1 .scrollbar { position: relative; float: right; width: 15px; }

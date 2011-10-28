@@ -35,6 +35,15 @@
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
+  <script src="js/libs/jquery.tinyscrollbar.min.js"></script>
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <script src="http://batchgeo.com/api/js/"></script>
+  <script defer src="js/prayer.js"></script>
 </head>
 
 <body>
@@ -42,116 +51,120 @@
   <div id="container">
     <header>
   	  <h1 id="logo" class="ir"><a href="index.html" title="Home">Chuches Helping Churches</a></h1>
-	  <input type="text" name="search" id="search" placeholder="SEARCH BLOG..." >
-	  <ul id="social">
-		<li class="ir"><a href="media.html">Media</a></li>
-		<li class="ir"><a href="https://www.facebook.com/ChurchesHelpingChurches" target="_blank">Facebook</a></li>
-		<li class="ir"><a href="http://twitter.com/#!/churcheshelping" target="_blank">Twitter</a></li>
-		<li class="ir"><a href="http://www.youtube.com/user/churcheshelping" target="_blank">Youtube</a></li>
-		<li class="ir"><a href="">Subscribe</a></li>
-	  </ul>
-	  <ul id="join-give">
-		<li class="ir"><a href="join.html">Join Now</a></li>
-		<li class="ir"><a href="join.html#get-involved">Give Now</a></li>
-	  </ul>
+      <input type="text" name="search" id="search" placeholder="SEARCH BLOG..." >
+      <ul id="social">
+        <li class="ir"><a href="media.html">Media</a></li>
+        <li class="ir"><a href="https://www.facebook.com/ChurchesHelpingChurches" target="_blank">Facebook</a></li>
+        <li class="ir"><a href="http://twitter.com/#!/churcheshelping" target="_blank">Twitter</a></li>
+        <li class="ir"><a href="http://www.youtube.com/user/churcheshelping" target="_blank">Youtube</a></li>
+        <li class="ir"><a href="">Subscribe</a></li>
+      </ul>
+        <ul id="join-give">
+        <li class="ir"><a href="join.html">Join Now</a></li>
+        <li class="ir"><a href="join.html#get-involved">Give Now</a></li>
+      </ul>
     </header>
-	<article id="main">
-	  <h2>Prayer Room</h2>
-	  <div id="content">
-      <div class="textbubble-outside">
-        <div id="intro" class="textbubble">
-        <p>
-          <span class="highlight">Prayer is the power of our ministry.</span>
-          It is the one way that we can continually be blessing our brothers and sisters in different churches.  As you lift prayers for a church in Haiti, those members are also praying for churches in Japan, and the Japanese church is praying for churches in America, the cycle of prayer never stops.
-          <span class="highlight">Will you pray with us?</span>
-        </p>
-        </div>
-      </div>
-        
-      <a id="read" class="toggle-button">Read Other Prayers</a>
-      <div id="dialog">
-        <div id="map" data-batchgeo-height="100%">
-          <p>Loading map...</p>
-        </div>
-        <article>
-          <h2>Prayers</h2>
-          <div id="scrollbar1">
-            <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-            <div class="viewport">
-                <ul id="prayers" class="overview">
-                  <li>My prayer is...<br><span class="author">Oliver from <address>Champaign, IL</address></span></li>
-                  <li>My prayer is...<br><span class="author">Elizabeth from <address>New York, NY</address></span></li>
-                  <li>My prayer is...<br><span class="author">Arisa from <address>Osaka, Japan</address></span></li>
-                  <li>My prayer is...<br><span class="author">Chris from <address>Pittsburg, IL</address></span></li>
-                  <li>My prayer is...<br><span class="author">David from <address>Schaumburg, IL</address></span></li>
-                  <li>My prayer is...<br><span class="author">Cassie from <address>Champaign, IL</address></span></li>
-                  <li>My prayer is...<br><span class="author">Zack from <address>Chicago, IL</address></span></li>
-                  <li>My prayer is...<br><span class="author">Brian from <address>North Caldwell, NJ</address></span></li>
-                  <li>My prayer is...<br><span class="author">Neel from <address>Wayne, NJ</address></span></li>
-                  <li>My prayer is...<br><span class="author">Pete from <address>San Diego, CA</address></span></li>
-                  <li>My prayer is...<br><span class="author">John from <address>Manitoba, Canada</address></span></li>
-                  <li>My prayer is...<br><span class="author">Tim from <address>Phoenix, AZ</address></span></li>
-                </ul>
-              </div>
+    <article id="main">
+      <h2>Prayer Room</h2>
+      <div id="content">
+        <div class="textbubble-outside">
+          <div id="intro" class="textbubble">
+          <p>
+            <span class="highlight">Prayer is the power of our ministry.</span>
+            It is the one way that we can continually be blessing our brothers and sisters in different churches.  As you lift prayers for a church in Haiti, those members are also praying for churches in Japan, and the Japanese church is praying for churches in America, the cycle of prayer never stops.
+            <span class="highlight">Will you pray with us?</span>
+          </p>
           </div>
-        </article>
-      </div>
-        
-      <div>
-        <h3 class="toggle-button">Post Your Prayer</h3>
-        <div id="prayerform" class="textbubble-outside">
-        <div class="textbubble">
-          <form action="" method="post">
-          <label for="name">Name</label><input type="text" id="name"><br>
-          <label for="name">Email Address</label><input type="email" id="email"><br>
-          <label for="city">City</label><input type="text" id="city"><br>
-          <label for="state">State</label><input type="text" id="state"><br>
-          <label for="country">Country</label><input type="text" id="country"><br>
-          <label for="prayer">Your Prayer</label><textarea id="prayer" rows="3"></textarea><br>
-          <input type="submit" class="greenbutton" value="POST PRAYER">
-          </form>
         </div>
+          
+        <a id="read" class="toggle-button">Read Other Prayers</a>
+        <div id="dialog" class="dialog">
+          <div id="map" data-batchgeo-height="100%">
+            <p>Loading map...</p>
+          </div>
+          <article>
+            <h2>Prayers</h2>
+            <div id="scrollbar1">
+              <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+              <div class="viewport">
+                  <ul id="prayers" class="overview">
+                    <li>My prayer is...<br><span class="author">Oliver from <address>Champaign, IL</address></span></li>
+                    <li>My prayer is...<br><span class="author">Elizabeth from <address>New York, NY</address></span></li>
+                    <li>My prayer is...<br><span class="author">Arisa from <address>Osaka, Japan</address></span></li>
+                    <li>My prayer is...<br><span class="author">Chris from <address>Pittsburg, IL</address></span></li>
+                    <li>My prayer is...<br><span class="author">David from <address>Schaumburg, IL</address></span></li>
+                    <li>My prayer is...<br><span class="author">Cassie from <address>Champaign, IL</address></span></li>
+                    <li>My prayer is...<br><span class="author">Zack from <address>Chicago, IL</address></span></li>
+                    <li>My prayer is...<br><span class="author">Brian from <address>North Caldwell, NJ</address></span></li>
+                    <li>My prayer is...<br><span class="author">Neel from <address>Wayne, NJ</address></span></li>
+                    <li>My prayer is...<br><span class="author">Pete from <address>San Diego, CA</address></span></li>
+                    <li>My prayer is...<br><span class="author">John from <address>Manitoba, Canada</address></span></li>
+                    <li>My prayer is...<br><span class="author">Tim from <address>Phoenix, AZ</address></span></li>
+                  </ul>
+                </div>
+            </div>
+          </article>
+        </div>
+          
+        <div>
+          <h3 class="toggle-button">Post Your Prayer</h3>
+          <div id="prayerform" class="textbubble-outside">
+          <div class="textbubble">
+            <form action="" method="post">
+            <label for="name">Name</label><input type="text" id="name"><br>
+            <label for="name">Email Address</label><input type="email" id="email"><br>
+            <label for="city">City</label><input type="text" id="city"><br>
+            <label for="state">State</label><input type="text" id="state"><br>
+            <label for="country">Country</label><input type="text" id="country"><br>
+            <label for="prayer">Your Prayer</label><textarea id="prayer" rows="3"></textarea><br>
+            <input type="submit" class="greenbutton" value="POST PRAYER">
+            </form>
+          </div>
+          </div>
         </div>
       </div>
-	  </div>
-	</article>
-	<nav>
-	  <h2 hidden>Main Navigation</h2>
-	  <ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="join.html">Join Us</a></li>
-		<li><a href="what-we-do.html">What We Do</a></li>
-		<li><a href="who-we-are.html" class="active">Who We Are</a></li>
-		<li><a href="churches.html">The Churches</a></li>
-		<li><a href="">Blog</a></li>
-	  </ul>
-	</nav>
+    </article>
+    <nav>
+      <h2 hidden>Main Navigation</h2>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="what-we-do.html">What We Do</a></li>
+      <li><a href="who-we-are.html" class="active">Who We Are</a></li>
+      <li><a href="churches.html">The Churches</a></li>
+      <li><a href="">Blog</a></li>
+      </ul>
+    </nav>
     <footer>
-	  <div>
-		<p><a href="">Contact Us</a></p><p>&copy; CHURCHES<span class="highlight">HELPING</span>CHURCHES</p>
-	  </div>
-	  <p>Co-founders: <a href="http://jamesmacdonald.com/">jamesmacdonald.com</a> & <a href="http://pastormark.tv/">pastormark.tv</a></p>
+      <div>
+        <p><a id="footer-contact">Contact Us</a></p><p>&copy; CHURCHES<span class="highlight">HELPING</span>CHURCHES</p>
+      </div>
+      <p>Co-founders: <a href="http://jamesmacdonald.com/" target="_blank">jamesmacdonald.com</a> & <a href="http://pastormark.tv/" target="_blank">pastormark.tv</a></p>
     </footer>
   </div> <!--! end of #container -->
-  <div id="overlay"></div>
+  <div class="dialog" id="contact-dialog">
+    <h4>Contact Information</h4>
+    <h5>Mailing Address</h5>
+    <p>
+      Churches Helping Churches<br>
+      P.O. Box 6558<br>
+      Elgin, IL<br>
+      60121-6558<br>
+    </p>
+    <h5>Street Address</h5>
+    <p>
+      Churches Helping Churches<br>
+      c/o Harvest Bible Chapel<br>
+      1000 N. Randall Road<br>
+      Elgin, IL 60123<br>
+    </p>
+    <h5>Phone</h5>
+    <p>1-847-398-7024 ext. 3452</p>
+    <h5>Email Address</h5>
+    <p>information@churcheshelpingchurches.com</p>
+  </div>
 
-  <!-- JavaScript at the bottom for fast page loading -->
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
-  <script src="js/libs/jquery.tinyscrollbar.min.js"></script>
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <script src="http://batchgeo.com/api/js/"></script>
-  <script defer src="js/prayer.js"></script>
-  <!-- end scripts-->
-
-	
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <!--
   <script>
