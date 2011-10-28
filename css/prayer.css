@@ -25,11 +25,10 @@
 #scrollbar1 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
 #scrollbar1 .disable{ display: none; }
 #prayers { padding: 0; }
-#prayers li { list-style: none; margin-bottom: 15px; }
+#prayers li { list-style: none; margin-bottom: 15px; cursor: pointer; }
 #prayers li:hover { color: #bdb933; }
 .author { font-style: italic; }
 address { display: inline; }
-/*#overlay { display: none; z-index: 1000; background-color: #fff; opacity: 0.6; position: absolute; top: 0; left: 0; width: 100%; height: 3000px; }*/
 
 #prayerform { margin-left: 13px; }
 #prayerform .textbubble { display: inline-block; padding: 15px; }
