@@ -342,12 +342,25 @@ footer > p { margin-top: 40px; }
     -moz-box-shadow: 3px 3px 10px #555; -webkit-box-shadow: 3px 3px 10px #555; box-shadow: 3px 3px 10px #555;
 }
 .ui-dialog .ui-widget-content { color: #fff; }
+.ui-dialog .ui-widget-content a { color: #bfb931; }
 .ui-dialog .ui-widget-header { background: #2f2f2f; border: none; }
 .ui-dialog .ui-widget-header .ui-icon { background: url(../img/modal-close.png) no-repeat 0 0; }
 .ui-dialog .ui-dialog-titlebar-close.ui-state-hover { background: none; padding: 1px; border: none; }
 .ui-dialog .ui-dialog-titlebar-close { right: -15px; top: -7px; width: 32px; height: 32px; z-index: 999999; }
 .ui-dialog .ui-state-hover .ui-icon, .ui-dialog .ui-state-focus .ui-icon { background-image: none; background: url(../img/modal-close.png) no-repeat 0 -48px; }
 .ui-dialog .ui-icon-closethick { width: 32px; height: 32px;  }
+
+.tinyscrollbar {  }
+.tinyscrollbar .viewport { overflow: hidden; position: relative; height: 100% }
+.tinyscrollbar .overview { position: absolute; left: 0; top: 0; }
+.tinyscrollbar .thumb .end,
+.tinyscrollbar .thumb { background-color: #beb931; }
+.tinyscrollbar .scrollbar { position: relative; float: right; width: 15px; }
+.tinyscrollbar .track { background-color: #515151; height: 100%; width:2px; position: relative; left: 3px; }
+.tinyscrollbar .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+.tinyscrollbar .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+.tinyscrollbar .disable{ display: none; }
+
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */

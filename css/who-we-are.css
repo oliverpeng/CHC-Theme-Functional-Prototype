@@ -3,11 +3,19 @@
 
 .fl { float: left; }
 
-.textbubble-outside { margin-left: 59px; width: 85%; }
+.wrapper { margin-left: 46px; }
+.textbubble-outside { width: 85%; margin-left: 9px; }
 .textbubble { padding: 10px 15px; }
-.toggle-button { margin-left: 46px; width: 190px; }
+.toggle-button { width: 190px; }
 .textbubble .overlay { background-color: #e0dd84; padding: 10px; }
 .greybubble { width: 190px; margin-left: 10px; }
+
+#statement { background-image: none; }
+#statement-dialog { font-size: 14px; }
+#statement-dialog .overview { padding: 0 55px 20px 45px; }
+#statement-dialog h2 { color: #fff; font-size: 23px; margin: 0; margin-bottom: 20px; }
+#statement-dialog a:focus { outline: none; }
+#statement-dialog p, #statement-dialog li { margin-bottom: 15px; }
 
 #james, #mark { float: left; width: 50%; }
 #james p, #mark p { margin: 5px 0; margin-left: 20px; }

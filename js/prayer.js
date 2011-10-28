@@ -10,9 +10,11 @@ $(document).ready( function() {
         title: "Read Prayers"
     });
     
+    var initialize = false;
     $('#read').click( function() {
         $dialog.dialog('open');
-        setTimeout( function() {
+        if(!initialize) {
+            initialize = true;
             batchgeo('#map')
                 .source('#prayers')
                 .options({
@@ -20,8 +22,9 @@ $(document).ready( function() {
                     height:'510px'
                 })
                 .map();
-                $('#scrollbar1').tinyscrollbar();
-        }, 100);
+            $('#prayers').tinyscrollbar({'height': 475});
+        }
+        
         
     });
 });

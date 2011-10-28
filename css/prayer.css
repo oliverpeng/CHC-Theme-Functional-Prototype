@@ -15,15 +15,7 @@
 }
 #dialog article { float: right; width: 231px; height: 500px; }
 #dialog article h2 { color: #b3b130; font-size: 19px; font-weight: normal; }
-#scrollbar1 .viewport { overflow: hidden; position: relative; height: 475px; }
-#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; font-size: 14px; }
-#scrollbar1 .thumb .end,
-#scrollbar1 .thumb { background-color: #beb931; }
-#scrollbar1 .scrollbar { position: relative; float: right; width: 15px; }
-#scrollbar1 .track { background-color: #515151; height: 100%; width:2px; position: relative; left: 3px; }
-#scrollbar1 .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
-#scrollbar1 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
-#scrollbar1 .disable{ display: none; }
+
 #prayers { padding: 0; }
 #prayers li { list-style: none; margin-bottom: 15px; cursor: pointer; }
 #prayers li:hover { color: #bdb933; }
