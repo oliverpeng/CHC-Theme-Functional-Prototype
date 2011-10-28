@@ -1,19 +1,27 @@
 $(document).ready( function() {
-    var $prayermap = $('#prayermap');
+    var $dialog = $('#dialog');
     
-    $prayermap.dialog({
+    $dialog.dialog({
         autoOpen: false,
         width: 1060,
         height: 565,
         modal: true,
-        resizable: false
+        resizable: false,
+        title: "Read Prayers"
     });
     
     $('#read').click( function() {
-        $prayermap.dialog('open');
+        $dialog.dialog('open');
+        setTimeout( function() {
+            batchgeo('#map')
+                .source('#prayers')
+                .options({
+                    width:'757px',
+                    height:'510px'
+                })
+                .map();
+                $('#scrollbar1').tinyscrollbar();
+        }, 100);
+        
     });
-});
-
-$(document).ready( function() {
-    $('#scrollbar1').tinyscrollbar();
 });

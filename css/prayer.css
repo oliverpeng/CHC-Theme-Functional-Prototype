@@ -7,24 +7,14 @@
 
 #read { background-image: none; }
 
-#prayermap { padding: 0 15px 15px 15px; }
-#batchgeo-map-prayers { float: left; width: 757px; }
-#prayermap article { float: right; width: 255px; height: 500px; }
-#prayermap article h2 { color: #b3b130; font-size: 19px; font-weight: normal; }
-/*#prayermap { width: 950px; position: absolute; height: 545px; top: 50%; left: -9999px; margin-left: -490px; margin-top: -268px; background-color: #2f2f2f; padding: 15px; z-index: 2000;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-}
-#close { display: block; width: 32px; height: 32px; background: url(../img/modal-close.png) no-repeat 0 0; cursor: pointer; position: absolute; right: -12px; top: -12px; z-index: 2001;}
-#close:hover { background-position: 0 -48px; }
-#batchgeo-map-1 { width: 657px; float: left; border: 5px solid #ccc; height: 536px;
+#dialog { padding: 0 15px 15px 15px; display: none; }
+#map { float: left; width: 757px; background-color: #ccc; border: 5px solid #ccc;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
-#prayermap article { float: right; width: 255px; }
-#prayermap article h2 { color: #b3b130; font-size: 19px; font-weight: normal; }*/
+#dialog article { float: right; width: 231px; height: 500px; }
+#dialog article h2 { color: #b3b130; font-size: 19px; font-weight: normal; }
 #scrollbar1 .viewport { overflow: hidden; position: relative; height: 475px; }
 #scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; color: #fff; font-size: 14px; }
 #scrollbar1 .thumb .end,
@@ -34,9 +24,9 @@
 #scrollbar1 .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
 #scrollbar1 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
 #scrollbar1 .disable{ display: none; }
-#batchgeo-data-prayers { padding: 0; }
-#batchgeo-data-prayers li { list-style: none; margin-bottom: 15px; }
-#batchgeo-data-prayers li:hover { color: #bdb933; }
+#prayers { padding: 0; }
+#prayers li { list-style: none; margin-bottom: 15px; }
+#prayers li:hover { color: #bdb933; }
 .author { font-style: italic; }
 address { display: inline; }
 /*#overlay { display: none; z-index: 1000; background-color: #fff; opacity: 0.6; position: absolute; top: 0; left: 0; width: 100%; height: 3000px; }*/
