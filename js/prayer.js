@@ -15,6 +15,11 @@ $(document).ready( function() {
         $dialog.dialog('open');
         if(!initialize) {
             initialize = true;
+            
+            // Tinyscrollbar needs to be called first since it re-wraps the DOM
+            // and will break batchgeo's click event handlers if called after
+            $('#prayers').tinyscrollbar({'height': 475});
+            
             batchgeo('#map')
                 .source('#prayers')
                 .options({
@@ -22,7 +27,6 @@ $(document).ready( function() {
                     height:'510px'
                 })
                 .map();
-            $('#prayers').tinyscrollbar({'height': 475});
         }
         
         
