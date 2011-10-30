@@ -3,5 +3,6 @@
 #videos { height: 360px; width: 773px; margin-top: 20px; background-color: #beb931; }
 
 #photostream { background-color: #373737; padding: 15px 12px 30px 12px; width: 988px; margin-top: 27px; }
-#photostream ul { list-style: none; }
+#photostream div { width: 930px; overflow: hidden; position: relative; height: 81px; }
+#photostream ul { list-style: none; margin: 0; width: 2790px; position: absolute; top: 0; left: 0; }
 #photostream li { border: 3px solid #fff; float: left; margin-right: 20px; }
