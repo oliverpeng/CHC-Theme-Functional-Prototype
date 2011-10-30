@@ -90,19 +90,25 @@ function ajaxFetchPhotos(options) {
 }
 
 $(document).ready( function() {       
+    var $ulContainer = $('#photostream .ul-container');
     ajaxFetchPhotos({
         page: 1,
         'per_page': 27,
         callback: function(json) {
-            var ul = document.createElement('ul');
+            var $ul = $( document.createElement('ul') );
             $.each(json.photos.photo, function(i, photo) {
-                
                 var urls = buildFlickrPhotoURL({farmId: photo.farm, serverId: photo.server, id: photo.id, secret: photo.secret, size: ['s','z'] });
                 var $image = $( document.createElement('img') ).attr('src', urls.s);
                 var $a = $( document.createElement('a') ).attr('href', urls.z).append( $image );
-                $( document.createElement('li') ).append( $a ).appendTo(ul);
+                $( document.createElement('li') ).append( $a ).appendTo($ul);
+                
+                
+                if ( (i+1)%9 === 0 ) {
+                    $ul.appendTo($ulContainer);
+                    $ul = $( document.createElement('ul') );
+                }
             });
-            $ul.find('a').lightBox({
+            $ulContainer.find('a').lightBox({
                 fixedNavigation: true,
                 imageBtnClose: 'css/lightbox/images/lightbox-btn-close.gif'
             });
@@ -110,18 +116,15 @@ $(document).ready( function() {
     });
     
     function next() {
-        var currpos = $ul.position().left;
+        var currpos = $ulContainer.position().left;
         var width = $('#photostream .viewport').width();
-        var margin = parseInt($('li', $ul).css('margin-right'), 10);
-        $ul.animate({left: currpos - width - margin + 1}, 'slow', 'easeOutQuad');
+        $ulContainer.animate({left: currpos - width + 1}, 'slow', 'easeOutQuad');
     }
     
     function prev() {
-        var currpos = $ul.position().left;
+        var currpos = $ulContainer.position().left;
         var width = $('#photostream .viewport').width();
-        var margin = parseInt($('li', $ul).css('margin-right'), 10);
-        console.log(currpos, width, margin);
-        $ul.animate({left: currpos + width + margin - 1}, 'slow', 'easeOutQuad');
+        $ulContainer.animate({left: currpos + width - 1}, 'slow', 'easeOutQuad');
     }
     $('#next').click( next );
     $('#prev').click( prev );

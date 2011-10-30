@@ -5,6 +5,8 @@
 #photostream { background-color: #373737; padding: 15px 12px 30px 12px; width: 988px; margin-top: 27px; }
 #next, #prev { display: block; height: 70px; float: left; padding-top: 6px; cursor: pointer; }
 #next img, #prev img { vertical-align: bottom; }
-#photostream div { width: 890px; overflow: hidden; position: relative; height: 81px; float: left; margin: 0 20px; }
-#photostream ul { list-style: none; padding: 0; margin: 0; width: 2790px; position: absolute; top: 0; left: 0; }
+#photostream .viewport { width: 890px; overflow: hidden; position: relative; height: 81px; float: left; margin: 0 20px; }
+#photostream .ul-container { width: 2790px; position: absolute; top: 0; left: 0; }
+#photostream ul { list-style: none; padding: 0; margin: 0; float: left; }
 #photostream li { border: 3px solid #fff; float: left; margin-right: 20px; }
+#photostream li:last-child { margin-right: 0; }
