@@ -96,11 +96,12 @@ $(document).ready( function() {
         'per_page': 27,
         callback: function(json) {
             $.each(json.photos.photo, function(i, photo) {
-                var urls = buildFlickrPhotoURL({farmId: photo.farm, serverId: photo.server, id: photo.id, secret: photo.secret, size: ['s','b'] });
+                var urls = buildFlickrPhotoURL({farmId: photo.farm, serverId: photo.server, id: photo.id, secret: photo.secret, size: ['s','z'] });
                 var $image = $( document.createElement('img') ).attr('src', urls.s);
-                var $a = $( document.createElement('a') ).attr('href', urls.b).append( $image );
+                var $a = $( document.createElement('a') ).attr('href', urls.z).append( $image );
                 $( document.createElement('li') ).append( $a ).appendTo($ul);
             });
+            $ul.find('a').lightBox({fixedNavigation:true});
         }
     });
     
