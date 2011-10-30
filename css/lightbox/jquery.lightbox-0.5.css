@@ -65,10 +65,12 @@
 #lightbox-nav-btnPrev { 
 	left: 0; 
 	float: left;
+	background: url("images/lightbox-btn-prev.gif") no-repeat scroll left 15% transparent !important;
 }
 #lightbox-nav-btnNext { 
 	right: 0; 
 	float: right;
+	background: url("images/lightbox-btn-next.gif") no-repeat scroll right 15% transparent !important;
 }
 #lightbox-container-image-data-box {
 	font: 10px Verdana, Helvetica, sans-serif;

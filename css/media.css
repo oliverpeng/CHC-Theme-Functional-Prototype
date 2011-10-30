@@ -1,8 +1,10 @@
 #main > h2 { background-position: 0 -224px; margin-bottom: 0; }
 
-#videos { height: 360px; width: 773px; margin-top: 20px; background-color: #beb931; }
+#videos { height: 200px; width: 773px; margin-top: 20px; background-color: #beb931; }
 
 #photostream { background-color: #373737; padding: 15px 12px 30px 12px; width: 988px; margin-top: 27px; }
-#photostream div { width: 930px; overflow: hidden; position: relative; height: 81px; }
-#photostream ul { list-style: none; margin: 0; width: 2790px; position: absolute; top: 0; left: 0; }
+#next, #prev { display: block; height: 70px; float: left; padding-top: 6px; cursor: pointer; }
+#next img, #prev img { vertical-align: bottom; }
+#photostream div { width: 890px; overflow: hidden; position: relative; height: 81px; float: left; margin: 0 20px; }
+#photostream ul { list-style: none; padding: 0; margin: 0; width: 2790px; position: absolute; top: 0; left: 0; }
 #photostream li { border: 3px solid #fff; float: left; margin-right: 20px; }
