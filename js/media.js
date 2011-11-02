@@ -75,7 +75,7 @@ function ajaxFetchPhotos(options) {
  
     var fetchParams = {
         'method': 'flickr.people.getPublicPhotos',
-        'api_key': '0dfd190065b8726df9f0670b7ec3dd0e',
+        'api_key': 'e7042389ded8cb255e7b20c7153b435c',
         'user_id': '46965176@N02',
         'format': 'json',
         'nojsoncallback': 1
@@ -90,42 +90,118 @@ function ajaxFetchPhotos(options) {
 }
 
 $(document).ready( function() {       
+    var $photostream = $('#photostream');
     var $ulContainer = $('#photostream .ul-container');
-    ajaxFetchPhotos({
-        page: 1,
-        'per_page': 27,
-        callback: function(json) {
-            var $ul = $( document.createElement('ul') );
-            $.each(json.photos.photo, function(i, photo) {
-                var urls = buildFlickrPhotoURL({farmId: photo.farm, serverId: photo.server, id: photo.id, secret: photo.secret, size: ['s','z'] });
-                var $image = $( document.createElement('img') ).attr('src', urls.s);
-                var $a = $( document.createElement('a') ).attr('href', urls.z).append( $image );
-                $( document.createElement('li') ).append( $a ).appendTo($ul);
-                
-                
-                if ( (i+1)%9 === 0 ) {
-                    $ul.appendTo($ulContainer);
-                    $ul = $( document.createElement('ul') );
+    var _firstFetch = true;
+    var _currPage = 0;
+    var _numPages = 0;
+    var IMAGES_PER_PAGE = 9;
+    var IMAGES_PER_FETCH = 36;
+    
+    function fetchImages() {
+        ajaxFetchPhotos({
+            page: (_numPages*IMAGES_PER_PAGE / IMAGES_PER_FETCH)+1,
+            'per_page': IMAGES_PER_FETCH,
+            callback: function(json) {
+                if(!json.photos) {
+                    console.log(json.message);
+                    return;
                 }
-            });
-            $ulContainer.find('a').lightBox({
-                fixedNavigation: true,
-                imageBtnClose: 'css/lightbox/images/lightbox-btn-close.gif'
-            });
+                
+                var $ul = $( document.createElement('ul') );
+                $.each(json.photos.photo, function(i, photo) {
+                    var urls = buildFlickrPhotoURL({farmId: photo.farm, serverId: photo.server, id: photo.id, secret: photo.secret, size: ['s','z'] });
+                    var $image = $( document.createElement('img') ).attr('src', urls.s);
+                    var $a = $( document.createElement('a') ).attr('href', urls.z).append( $image );
+                    $( document.createElement('li') ).append( $a ).appendTo($ul);
+                    
+                    if ( (i+1)%IMAGES_PER_PAGE === 0 ) {
+                        $ul.hide().appendTo($ulContainer);
+                        $ul = $( document.createElement('ul') );
+                    }
+                });
+                
+                _numPages += IMAGES_PER_FETCH / IMAGES_PER_PAGE;
+                
+                /*$ulContainer.find('a').lightBox({
+                    fixedNavigation: true,
+                    imageBtnClose: 'css/lightbox/images/lightbox-btn-close.gif'
+                });*/
+                if (_firstFetch) {
+                    _firstFetch = false;
+                    $ulContainer.find('ul:first').css('left', '890px').show();
+                    _currPage = 1;
+                }
+                $photostream.trigger('pageChange');
+            }
+        });
+    }
+    
+    $photostream.bind('pageChange', function() {
+        if ( _currPage <= 1 ) {
+            $('#prev').addClass('disabled');
+        } else {
+            $('#prev').removeClass('disabled');
         }
-    });
+        
+        if ( _currPage >= _numPages ) {
+            $('#next').addClass('disabled');
+            fetchImages();
+        } else {
+            $('#next').removeClass('disabled');
+        }
+    }).trigger('pageChange');
     
     function next() {
-        var currpos = $ulContainer.position().left;
-        var width = $('#photostream .viewport').width();
-        $ulContainer.animate({left: currpos - width + 1}, 'slow', 'easeOutQuad');
+        if ( _currPage === _numPages ) {
+            return;
+        }
+        
+        var $currUL = $ulContainer.find('ul:visible');
+        var $nextUL = $currUL.next();
+        
+        if ($currUL.queue('fx').length > 0 ) {  // wait for all animations to end first
+            return;
+        }
+        
+        $nextUL.css({left: 1780, display: 'block' }); // Put it right of current
+        
+        // Animate them both left
+        $currUL.animate({left: 0}, 'slow', 'easeOutQuad', function() {
+            $(this).hide();
+        });
+        $nextUL.animate({left: 890}, 'slow', 'easeOutQuad');
+        
+        _currPage++
+        $photostream.trigger('pageChange');
+        console.log(_currPage, ' of ', _numPages);
     }
     
     function prev() {
-        var currpos = $ulContainer.position().left;
-        var width = $('#photostream .viewport').width();
-        $ulContainer.animate({left: currpos + width - 1}, 'slow', 'easeOutQuad');
+        if ( _currPage === 1 ) {
+            return;
+        }
+        
+        var $currUL = $ulContainer.find('ul:visible');
+        var $prevUL = $currUL.prev();
+        
+        if ($currUL.queue('fx').length > 0 ) {  // wait for all animations to end first
+            return;
+        }
+        
+        $prevUL.css({ left: 0, display: 'block' }); // Put it left of current
+        
+        // Animate them both right
+        $currUL.animate({left: 1780}, 'slow', 'easeOutQuad', function() {
+            $(this).hide();
+        });
+        $prevUL.animate({left: 890}, 'slow', 'easeOutQuad');
+        
+        _currPage--;
+        $photostream.trigger('pageChange');
+        console.log(_currPage, ' of ', _numPages);
     }
+    
     $('#next').click( next );
     $('#prev').click( prev );
     
