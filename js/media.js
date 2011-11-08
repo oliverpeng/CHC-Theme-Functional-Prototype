@@ -3,7 +3,7 @@
     var FLICKR_API_KEY = '7727fadf56169c11594baf12bc447392',
         FLICKR_USER_ID = '46965176@N02',
         IMAGES_PER_PAGE = 9,
-        IMAGES_PER_FETCH = 36,
+        IMAGES_PER_FETCH = 18,
         $photostream,
         $ulContainer,
         _firstFetch = true,
@@ -176,6 +176,7 @@
                     _currPage = 1;
                 }
                 $photostream.trigger('pageChange');
+                $('#photostream .ul-container a').fancybox();
             }
         });
     };
@@ -229,6 +230,14 @@
         $photostream.trigger('pageChange');
         console.log(_currPage, ' of ', _numPages);
     };
+    
+    $.flickrLoader.getCurrPage = function() {
+        return _currPage;
+    }
+    
+    $.flickrLoader.getPageOfImage = function(imageIndex) {
+        return Math.floor(imageIndex/IMAGES_PER_PAGE)+1;
+    }
     
 })(jQuery);
 
