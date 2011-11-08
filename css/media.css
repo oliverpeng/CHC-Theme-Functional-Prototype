@@ -3,9 +3,10 @@
 #videos { height: 200px; width: 773px; margin-top: 20px; background-color: #beb931; }
 
 #photostream { background-color: #373737; padding: 15px 12px 30px 12px; width: 988px; margin-top: 27px; }
-#next, #prev { display: block; height: 70px; float: left; padding-top: 6px; cursor: pointer; }
-#next.disabled, #prev.disabled { opacity: 0.3; }
-#next img, #prev img { vertical-align: bottom; }
+#photostream .next, #photostream .prev { display: block; height: 70px; float: left; margin-top: 6px; cursor: pointer; width: 27px; }
+#photostream .next { background: url(../img/media/next.png) no-repeat 0 0 transparent; }
+#photostream .prev { background: url(../img/media/previous.png) no-repeat 0 0 transparent; }
+#photostream .next.disabled, #photostream .prev.disabled { opacity: 0.3; }
 #photostream .viewport { width: 890px; overflow: hidden; position: relative; height: 81px; float: left; margin: 0 20px; }
 #photostream .ul-container { width: 2670px; position: absolute; top: 0; left: 0; left: -890px; }
 #photostream ul { list-style: none; padding: 0; margin: 0; width: 890px; position: absolute; }
