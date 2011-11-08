@@ -24,7 +24,6 @@
 	<!-- CSS: implied media=all -->
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
-	<link rel="stylesheet" href="css/lightbox/jquery.lightbox-0.5.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<!-- end CSS-->
@@ -85,6 +84,20 @@
 			<p>Co-founders: <a href="http://jamesmacdonald.com/" target="_blank">jamesmacdonald.com</a> & <a href="http://pastormark.tv/" target="_blank">pastormark.tv</a></p>
 		</footer>
 	</div> <!--! end of #container -->
+	<div id="lightbox">
+		<div id="lightbox-container">
+			<img id="lightbox-image" src="http://farm7.static.flickr.com/6047/6237902453_8e414df051_z.jpg">
+			<a id="lightbox-close"></a>
+			<div id="lightbox-nav">
+				<a id="lightbox-prev">
+					<span id="lightbox-prev-ico"></span>
+				</a>
+				<a id="lightbox-next">
+					<span id="lightbox-next-ico"></span>
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="dialog" id="contact-dialog">
 		<h4>Contact Information</h4>
 		<h5>Mailing Address</h5>
@@ -119,7 +132,6 @@
 	<script src="js/libs/jquery.cycle.all.latest.js"></script>
 	<script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
 	<script src="js/libs/jquery.easing.1.3.js"></script>
-	<script src="js/libs/jquery.lightbox-0.5.js"></script>
 	<script defer src="js/plugins.js"></script>
 	<script defer src="js/script.js"></script>
 	<script defer src="js/media.js"></script>

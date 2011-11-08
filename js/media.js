@@ -75,7 +75,7 @@ function ajaxFetchPhotos(options) {
  
     var fetchParams = {
         'method': 'flickr.people.getPublicPhotos',
-        'api_key': 'e7042389ded8cb255e7b20c7153b435c',
+        'api_key': 'bd47fb8ff09bbed816a31a947228c533',
         'user_id': '46965176@N02',
         'format': 'json',
         'nojsoncallback': 1
@@ -152,7 +152,7 @@ $(document).ready( function() {
         }
     }).trigger('pageChange');
     
-    function next() {
+    function nextPage() {
         if ( _currPage === _numPages ) {
             return;
         }
@@ -177,7 +177,7 @@ $(document).ready( function() {
         console.log(_currPage, ' of ', _numPages);
     }
     
-    function prev() {
+    function prevPage() {
         if ( _currPage === 1 ) {
             return;
         }
@@ -202,7 +202,41 @@ $(document).ready( function() {
         console.log(_currPage, ' of ', _numPages);
     }
     
-    $('#next').click( next );
-    $('#prev').click( prev );
+    $('#next').click( nextPage );
+    $('#prev').click( prevPage );
     
+    $('#photostream .ul-container a').live('click', function(e) {
+        var url=$(this).attr('href');
+        displayLightbox(url);
+        return false; // prevent default action of link
+    });
+    
+    $(window).keypress(function(e) {
+        console.log(e);
+        if(e.keyCode == 39) { // right
+            
+        } else if (e.keyCode == 37) { // left
+            
+        }
+    });
+    
+    $('#lightbox-image').load( function() {
+        var $this = $(this);
+        var h = $this.height();
+        var w = $this.width();
+        console.log(h, w);
+        
+        $('#lightbox-container').animate({ width: w, height: h}, 300, 'easeOutQuad');
+        $('#lightbox').fadeIn(300);
+    });
+    
+    function displayLightbox(url) {
+        $('#lightbox-image').attr('src', url);
+    }
+    
+    function closeLightbox() {
+        $('#lightbox').hide();
+    }
+    
+    $('#lightbox-close').click( closeLightbox );
 });
