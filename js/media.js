@@ -112,7 +112,7 @@ $(document).ready( function() {
                 $.each(json.photos.photo, function(i, photo) {
                     var urls = buildFlickrPhotoURL({farmId: photo.farm, serverId: photo.server, id: photo.id, secret: photo.secret, size: ['s','z'] });
                     var $image = $( document.createElement('img') ).attr('src', urls.s);
-                    var $a = $( document.createElement('a') ).attr('href', urls.z).append( $image );
+                    var $a = $( document.createElement('a') ).attr('href', urls.z).attr('rel','group1').append( $image );
                     $( document.createElement('li') ).append( $a ).appendTo($ul);
                     
                     if ( (i+1)%IMAGES_PER_PAGE === 0 ) {
@@ -133,6 +133,9 @@ $(document).ready( function() {
                     _currPage = 1;
                 }
                 $photostream.trigger('pageChange');
+                
+                // TODO: move this
+                $('a', $ulContainer).fancybox();
             }
         });
     }
