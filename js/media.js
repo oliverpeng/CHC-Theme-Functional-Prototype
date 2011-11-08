@@ -205,7 +205,7 @@ $(document).ready( function() {
     $('#next').click( nextPage );
     $('#prev').click( prevPage );
     
-    $('#photostream .ul-container a').live('click', function(e) {
+    /*$('#photostream .ul-container a').live('click', function(e) {
         var url=$(this).attr('href');
         displayLightbox(url);
         return false; // prevent default action of link
@@ -238,5 +238,5 @@ $(document).ready( function() {
         $('#lightbox').hide();
     }
     
-    $('#lightbox-close').click( closeLightbox );
+    $('#lightbox-close').click( closeLightbox );*/
 });
