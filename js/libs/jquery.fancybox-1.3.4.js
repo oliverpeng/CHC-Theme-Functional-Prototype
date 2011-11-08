@@ -789,6 +789,8 @@
 			return this;
 		}
 
+		console.log('$.fn.fancybox()');
+
 		$(this)
 			.data('fancybox', $.extend({}, options, ($.metadata ? $(this).metadata() : {})))
 			.unbind('click.fb')
@@ -890,27 +892,27 @@
 		}
 
 		pos = parseInt(pos);
-		console.log(pos);
-
-		selectedArray = currentArray;
+		selectedArray = $("a[rel=group1]");
+		//selectedArray = currentArray;
+		
 
 		if (pos > -1 && pos < currentArray.length) {
 			selectedIndex = pos;
 			_start();
+			
+			var fCurrPage = $.flickrLoader.getCurrPage();
+			var fPageOfImage = $.flickrLoader.getPageOfImage(pos);
+			if( fCurrPage < fPageOfImage ) {
+				$.flickrLoader.nextPage();
+			} else if ( fCurrPage > fPageOfImage ) {
+				$.flickrLoader.prevPage();
+			}
 
 		} else if (currentOpts.cyclic && currentArray.length > 1) {
 			selectedIndex = pos >= currentArray.length ? 0 : currentArray.length - 1;
 			_start();
 		}
 		
-		var fCurrPage = $.flickrLoader.getCurrPage();
-		var fPageOfImage = $.flickrLoader.getPageOfImage(pos);
-		if( fCurrPage < fPageOfImage ) {
-			$.flickrLoader.nextPage();
-		} else if ( fCurrPage > fPageOfImage ) {
-			$.flickrLoader.prevPage();
-		}
-
 		return;
 	};
 
