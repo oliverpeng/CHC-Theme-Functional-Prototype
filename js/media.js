@@ -3,7 +3,7 @@
     var FLICKR_API_KEY = '7727fadf56169c11594baf12bc447392',
         FLICKR_USER_ID = '46965176@N02',
         IMAGES_PER_PAGE = 9,
-        IMAGES_PER_FETCH = 18,
+        IMAGES_PER_FETCH = 36,
         $photostream,
         $ulContainer,
         _firstFetch = true,
@@ -203,7 +203,6 @@
         
         _currPage++
         $photostream.trigger('pageChange');
-        console.log(_currPage, ' of ', _numPages);
     };
     
     $.flickrLoader.prevPage = function() {
@@ -228,7 +227,6 @@
         
         _currPage--;
         $photostream.trigger('pageChange');
-        console.log(_currPage, ' of ', _numPages);
     };
     
     $.flickrLoader.getCurrPage = function() {

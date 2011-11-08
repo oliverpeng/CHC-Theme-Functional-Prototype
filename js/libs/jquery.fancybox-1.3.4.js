@@ -789,8 +789,6 @@
 			return this;
 		}
 
-		console.log('$.fn.fancybox()');
-
 		$(this)
 			.data('fancybox', $.extend({}, options, ($.metadata ? $(this).metadata() : {})))
 			.unbind('click.fb')
@@ -892,10 +890,9 @@
 		}
 
 		pos = parseInt(pos);
-		selectedArray = $("a[rel=group1]");
+		selectedArray = $("a[rel=group1]");		// HACK
 		//selectedArray = currentArray;
 		
-
 		if (pos > -1 && pos < currentArray.length) {
 			selectedIndex = pos;
 			_start();
