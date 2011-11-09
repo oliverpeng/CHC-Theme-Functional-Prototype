@@ -250,4 +250,12 @@
 
 $(document).ready( function() {
     $('#photostream').flickrLoader();
+    
+    $('#cycle').cycle({
+        fx: 'scrollLeft',
+        easing: 'easeOutQuad',
+        timeout: 0,
+        pager:  '#cycle_nav',
+        speed: 1000
+    });
 });
