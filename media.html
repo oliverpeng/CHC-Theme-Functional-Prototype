@@ -64,28 +64,49 @@
 				<a class="greenbutton">Brochures</a>
 			</div>
 			<div id="videos">
-				<div id="cycle">
-					<div>
-						<img src="">
-						<iframe width="575" height="322" src="http://www.youtube.com/embed/a9MoMj8x94s?rel=0" frameborder="0" allowfullscreen></iframe>
+				<div id="videos-container">
+					<div id="play"><div id="icon"></div></div>
+					<object id="player" width="575" height="322">
+						<param name="allowFullScreen" value="false"></param>
+						<param name="allowscriptaccess" value="always"></param>
+						<param name="wmode" value="transparent"></param>
+						<embed src="http://www.youtube.com/e/a9MoMj8x94s?version=3&enablejsapi=1&controls=0" type="application/x-shockwave-flash" width="575" height="322" allowscriptaccess="always" allowfullscreen="false" wmode="transparent"></embed>
+					</object>
+					<div id="cycle">
+						<img src="img/media/video_cover.jpg">
+						<img src="img/media/video_cover2.jpg">
+						<img src="img/media/video_cover3.jpg">
+						<img src="img/media/video_cover.jpg">
+						<img src="img/media/video_cover2.jpg">
+						<img src="img/media/video_cover3.jpg">
+						<!--
+						<div>
+							<img src="img/media/video_cover.jpg">
+							<iframe width="575" height="322" src="http://www.youtube.com/embed/a9MoMj8x94s?rel=0&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div>
+							<img src="img/media/video_cover2.jpg">
+							<iframe width="575" height="322" src="http://www.youtube.com/embed/l-zGrR_urZs?rel=0&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div>
+							<img src="img/media/video_cover3.jpg">
+							<iframe width="575" height="322" src="http://www.youtube.com/embed/3Ac8UlEq4rg?rel=0&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div>
+							<img src="img/media/video_cover.jpg">
+							<iframe width="575" height="322" src="http://www.youtube.com/embed/aexG6z3g368?rel=0&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div>
+							<img src="img/media/video_cover2.jpg">
+							<iframe width="575" height="322" src="http://www.youtube.com/embed/uqt9FniOvv8?rel=0&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div>
+							<img src="img/media/video_cover3.jpg">
+							<iframe width="575" height="322" src="http://www.youtube.com/embed/Qzg_eR8uyL0?rel=0&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						</div>-->
 					</div>
-					<div>
-						<iframe width="575" height="322" src="http://www.youtube.com/embed/l-zGrR_urZs?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div>
-						<iframe width="575" height="322" src="http://www.youtube.com/embed/3Ac8UlEq4rg?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div>
-						<iframe width="575" height="322" src="http://www.youtube.com/embed/aexG6z3g368?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div>
-						<iframe width="575" height="322" src="http://www.youtube.com/embed/uqt9FniOvv8?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div>
-						<iframe width="575" height="322" src="http://www.youtube.com/embed/Qzg_eR8uyL0?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
+					<div id="cycle_nav"></div>
 				</div>
-				<div id="cycle_nav"></div>
 			</div>
 			
 			

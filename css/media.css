@@ -1,6 +1,12 @@
 #main > h2 { background-position: 0 -224px; margin-bottom: 0; }
 
-#videos { height: 338px; width: 575px; margin-top: 20px; background-color: #beb931; padding: 15px 30px; overflow: hidden; }
+#videos { width: 575px; height: 342px; margin-top: 20px; background-color: #beb931; padding: 15px 30px; overflow: hidden; }
+#videos-container { position: relative; }
+#play { cursor: pointer; position: absolute; width: 189px; height: 107px; top: 50%; left: 50%; margin-top: -54px; margin-left: -95px; background: url(../img/media/play_button.png) no-repeat 0 0 transparent; z-index: 10; }
+#icon { width: 57px; height: 65px; margin: 20px auto; background: url(../img/media/play_icon.png) no-repeat 0 0 transparent; z-index: 15; opacity: 0.5; }
+#player { position: absolute; top: 0; left: -9999px; z-index: 50; }
+
+#cycle { margin-bottom: 5px; }
 #cycle_nav a { display: block; width: 17px; height: 17px; background-color: #fff; float: left; margin-right: 11px; text-indent: -9999px; }
 #cycle_nav a.activeSlide { background-color: #393937; }
 #cycle_nav a:focus { outline: none; }
@@ -9,7 +15,7 @@
 #downloads h3, #downloads a { display: block; }
 #downloads a { width: 120px; margin-left: 20px; }
 
-#photostream { background-color: #373737; padding: 15px 12px 5px 12px; width: 988px; margin-top: 27px; }
+#photostream { background-color: #373737; padding: 15px 12px 5px 12px; width: 988px; height: 106px; margin-top: 20px; }
 #photostream .next, #photostream .prev { display: block; height: 70px; float: left; margin-top: 6px; cursor: pointer; width: 27px; }
 #photostream .next { background: url(../img/media/next.png) no-repeat 0 0 transparent; }
 #photostream .prev { background: url(../img/media/previous.png) no-repeat 0 0 transparent; }
