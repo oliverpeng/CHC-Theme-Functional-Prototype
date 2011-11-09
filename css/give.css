@@ -1,0 +1,20 @@
+.box { background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8); border: 13px solid #BEB931; height: 65%; overflow: auto; padding: 37px 0; }
+.content { width: 780px; margin: 0 auto; }
+.paybtn { display: block; width: 220px; height: 97px; background: url(../img/give-payment.png) no-repeat 0 0 transparent; float: left; text-indent: -9999px; margin-right: 60px; cursor: pointer; margin-bottom: 40px; }
+.paybtn:last-of-type { margin-right: 0; }
+.cc:hover { background-position: -242px 0; }
+.paypal { background-position: 0 -112px; }
+.paypal:hover { background-position: -242px -112px; }
+.canadian { background-position: 0 -225px; }
+.canadian:hover { background-position: -242px -225px; }
+
+.info { float: left; width: 500px; }
+.info p { margin-bottom: 20px; font-size: 15.5px; }
+.signature { text-align: right; font-style: italic; }
+
+.contact { float: left; margin-left: 60px; width: 210px; }
+.contact p { margin-bottom: 20px; }
+.contact p:first-child { font-style: italic; }
+.contact p:nth-child(2) { font-size: 13px; }
+.contact p:nth-child(3) { font-size: 16px; font-style: italic; }
+.contact a { font-weight: bold; color: #7c8624; }
