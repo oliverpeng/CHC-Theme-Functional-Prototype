@@ -1,6 +1,6 @@
 (function($) {
 
-    var FLICKR_API_KEY = '7727fadf56169c11594baf12bc447392',
+    var FLICKR_API_KEY = '60873912bb09d2ef6ef7ec6979d8efa3',
         FLICKR_USER_ID = '46965176@N02',
         IMAGES_PER_PAGE = 9,
         IMAGES_PER_FETCH = 36,
@@ -116,6 +116,13 @@
             nextButton = $('<a></a>')
                 .addClass('next')
                 .attr('title', 'Next')
+                .appendTo(self);
+            
+            galleryButton = $('<a></a>')
+                .addClass('gallery')
+                .attr('title', 'Gallery')
+                .attr('href', 'http://www.flickr.com/photos/churcheshelpingchurches/')
+                .attr('target', '_blank')
                 .appendTo(self);
         
         $ulContainer = ulContainer;
