@@ -5,11 +5,15 @@
 #play { cursor: pointer; position: absolute; width: 189px; height: 107px; top: 50%; left: 50%; margin-top: -54px; margin-left: -95px; background: url(../img/media/play_button.png) no-repeat 0 0 transparent; z-index: 10; }
 #icon { width: 57px; height: 65px; margin: 20px auto; background: url(../img/media/play_icon.png) no-repeat 0 0 transparent; z-index: 15; opacity: 0.5; }
 #player { position: absolute; top: 0; left: -9999px; z-index: 50; }
-
 #cycle { margin-bottom: 5px; }
 #cycle_nav a { display: block; width: 17px; height: 17px; background-color: #fff; float: left; margin-right: 11px; text-indent: -9999px; }
 #cycle_nav a.activeSlide { background-color: #393937; }
 #cycle_nav a:focus { outline: none; }
+#more_vids { background-color: #fff; color: #393937; text-transform: uppercase; font-weight: bold; padding: 0 5px 0 7px; display: inline-block; height: 17px; line-height: 17px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+#more_vids:hover { background-color: #393937; color: #fff; }
 
 #downloads { float: right; margin-right: 140px; margin-top: 20px; }
 #downloads h3, #downloads a { display: block; }
