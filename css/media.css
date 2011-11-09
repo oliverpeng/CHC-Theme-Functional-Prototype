@@ -31,17 +31,3 @@
 #photostream li:last-child { margin-right: 0; }
 #photostream li:hover { border-color: #BEB931; }
 #photostream .gallery { clear: both; float: right; margin-right: 50px; margin-top: 6px; width: 27px; height: 19px; display: block; background: url(../img/media/gallery.png) no-repeat 0 0 transparent; cursor: pointer; }
-
-/*
-#lightbox { display: none; position: absolute; width: 100%; top: 50px; left: 0; }
-#lightbox-container { margin: 0 auto; width: 640px; height: 427px; padding: 10px; background-color: #fff; position: relative; }
-#lightbox-nav { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-#lightbox-prev, #lightbox-next { height: 100%; display: block; width: 35%; cursor: pointer; position: relative; }
-#lightbox-prev { float: left; }
-#lightbox-next { float: right; }
-#lightbox-prev-ico, #lightbox-next-ico { position: absolute; top: 50%; display: none; width: 30px; height: 30px; margin-top: -15px; }
-#lightbox-prev-ico { background: url(fancybox/fancy_nav_left.png) no-repeat 0 0 transparent;  left: 20px; }
-#lightbox-next-ico { background: url(fancybox/fancy_nav_right.png) no-repeat 0 0 transparent;  right: 20px;}
-#lightbox-prev:hover #lightbox-prev-ico, #lightbox-next:hover #lightbox-next-ico { display: block; }
-#lightbox-close { position: absolute; display: block; width: 60px; height: 60px; background: url(fancybox/fancy_close.png) no-repeat top right transparent; top: -15px; right: -15px; z-index: 50; cursor: pointer; }
-*/
