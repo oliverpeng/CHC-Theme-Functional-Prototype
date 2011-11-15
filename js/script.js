@@ -2,21 +2,6 @@
 
 */
 
-/* Toggle buttons shows or hides text bubble below it */
-$(document).ready( function() {
-    $('.toggle-button').click( function() {
-        var $this = $(this);
-        var $textbubble = $this.next('.textbubble-outside');
-        if ($textbubble.css('display') == 'none') {
-            $this.removeClass('expand');
-            $textbubble.slideDown();
-        } else {
-            $this.addClass('expand');
-            $textbubble.slideUp();
-        }
-    });
-});
-
 /* jQuery UI Tabs behavior on item with id 'tabs' */
 $(document).ready( function() {
     if ($.fn.tabs) {

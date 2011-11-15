@@ -305,12 +305,7 @@ footer > p { margin-top: 40px; }
   background-image: -moz-linear-gradient(center top, #eb1c24 0%, #fa535a 100%);
 }
 
-.toggle-button, .greybubble { color: #fff; font-size: 14px; display: inline-block; padding: 6px 20px; background: #373737; margin-top: 8px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
-.toggle-button { background: url("../img/togglebtn.png") no-repeat scroll 1px 6px #373737; cursor: pointer; }
-.toggle-button:hover { color: #bdb933; }
-.toggle-button.expand { background-position: 1px -22px; }
-.no-js .toggle-button { background-image: none; cursor: auto; }
-.no-js .toggle-button:hover { color: #fff; }
+.greybubble { color: #fff; font-size: 14px; display: inline-block; padding: 6px 20px; background: #373737; margin-top: 8px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
 
 /* ==|== jQuery UI style overrides ==========================================
    ========================================================================== */

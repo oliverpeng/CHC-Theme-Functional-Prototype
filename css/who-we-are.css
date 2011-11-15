@@ -6,9 +6,9 @@
 .wrapper { margin-left: 46px; }
 .textbubble-outside { width: 85%; margin-left: 9px; }
 .textbubble { padding: 10px 15px; }
-.toggle-button { width: 190px; }
+.greybubble { width: 190px; }
 .textbubble .overlay { background-color: #e0dd84; padding: 10px; }
-.greybubble { width: 190px; margin-left: 10px; }
+.textbubble .greybubble { margin-left: 10px; }
 
 #statement { background-image: none; }
 #statement-dialog { font-size: 14px; }

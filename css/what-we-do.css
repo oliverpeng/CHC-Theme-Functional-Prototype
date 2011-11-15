@@ -2,12 +2,13 @@
 #main > h2 { background-position: 0 -112px; }
 
 
-.toggle-button, .greybubble { margin-left: 60px; }
-.toggle-button { width: 190px; }
+.greybubble, .greybubble { margin-left: 60px; }
+.greybubble { width: 190px; }
 
 .textbubble-outside { width: 510px; margin-left: 75px; margin-top: 0; }
 .textbubble { padding: 10px; font-size: 13px; }
 .textbubble p { margin: 0; }
 .textbubble p:first-child { color: #fff; font-weight: bold; }
 
-.greybubble p { margin: 5px 0;}
+.greybubble.projects { width: auto; }
+.greybubble.projects p { margin: 5px 0; }

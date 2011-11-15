@@ -29,4 +29,4 @@ label { font-weight: bold; display: inline-block; width: 100px; text-align: righ
 input, textarea { width: 300px; margin: 3px 0; }
 input.greenbutton { width: auto; float: right; }
 
-.toggle-button { width: 160px; font-weight: bold; }
+.greybubble { width: 160px; font-weight: bold; }

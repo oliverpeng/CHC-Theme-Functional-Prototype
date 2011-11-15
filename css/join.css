@@ -19,7 +19,7 @@ iframe { border: 8px solid #cac141; }
 #get-involved .redbutton, #get-involved .greenbutton { display: block; text-align: center;  }
 #get-involved .greenbutton:last-child { font-size: 0.85em; }
 
-#get-involved .toggle-button { width: 232px; }
+#get-involved .greybubble { width: 232px; }
 #get-involved .textbubble-outside { margin-left: 15px; }
 #get-involved .textbubble { padding: 10px; }
 
