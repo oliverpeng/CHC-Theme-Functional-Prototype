@@ -1,15 +1,4 @@
 @font-face {
-  font-family: 'DowncomeRegular';
-  src: url('../fonts/downcome/downcome-webfont.eot');
-  src: url('../fonts/downcome/downcome-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/downcome/downcome-webfont.ttf') format('truetype'),
-       url('../fonts/downcome/downcome-webfont.woff') format('woff'),
-       url('../fonts/downcome/downcome-webfont.svg#DowncomeRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
     font-family: 'MuseoSans500';
     src: url('../fonts/museosans/MuseoSans_500-webfont.eot');
     src: url('../fonts/museosans/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
@@ -45,8 +34,8 @@ aside q:after { content: "”"; color: #7c8624; font-family: Arial, sans-serif; 
 .slide1 > div { width: 500px; float: left; }
 .slide1 div:nth-child(1) { margin: 127px 0 0 40px; text-align: center; }
 .slide1 div:nth-child(2) { margin: 120px 0 0 10px; }
-.slide1 h3 { font-family: DowncomeRegular, sans-serif; font-size: 60px; line-height: 90px; color: #fff; margin: 0; margin-bottom: 40px; }
-.slide1 a { font-size: 24px; }
+.slide1 h3 { font-size: 60px; line-height: 90px; color: #fff; margin: 0; margin-bottom: 40px; }
+.slide1 a { font-size: 24px; margin-top: 190px; }
 .slide1 iframe { border: 9px solid #beb931; }
 
 .slide2 { background: url('../img/backgrounds/home/slide2.jpg') no-repeat top left; position: relative; }
