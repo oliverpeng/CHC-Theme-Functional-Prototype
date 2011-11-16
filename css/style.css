@@ -217,12 +217,12 @@ h2 { text-transform: uppercase; font-size: 36px; margin-bottom: 10px;  }
 
 #container { width: 1050px; margin: 0 auto; }
 
-header { height: 121px; padding: 15px 10px 0 25px; background: #454545 url('../img/bg-header.jpg') no-repeat top left; position: relative; background-size: cover; }
+header { height: 95px; padding: 10px 10px 0 25px; background: #454545 url('../img/bg-header.jpg') no-repeat top left; position: relative; background-size: cover; }
 #logo { margin: 0; float: left; }
-#logo a { display: block; height: 109px; width: 297px; background: url('../img/logo.png') no-repeat top left; }
-#search { float: right; width: 232px; height: 42px; padding: 0 15px 0 42px; color: #fff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url('../img/search-bar.png') no-repeat top left; border: none;  }
+#logo a { display: block; height: 87px; width: 238px; background: url('../img/logo.png') no-repeat top left; }
+#search { float: right; width: 197px; height: 36px; padding: 0 15px 0 42px; color: #fff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url('../img/search-bar.png') no-repeat top left; border: none;  }
 #search:focus { outline: none; }
-#social { float: right; clear: right; margin-right: 22px; }
+#social { float: right; clear: right; margin-right: 5px; margin-top: 12px; }
 #social li {  margin-left: 7px; float: left; list-style: none;  }
 #social li a { display: block; height: 26px; }
 #social li:nth-child(1) a { width: 52px; background: url('../img/social.png') no-repeat 0 0; }
@@ -235,27 +235,28 @@ header { height: 121px; padding: 15px 10px 0 25px; background: #454545 url('../i
 #social li:nth-child(4) a:hover { background-position: -125px -35px; }
 #social li:nth-child(5) a { width: 26px; background: url('../img/social.png') no-repeat -159px 0; }
 #social li:nth-child(5) a:hover { background-position: -159px -35px; }
-#join-give { position: absolute; top: 47px; left: 452px; margin: 0; padding: 0; }
+#join-give { position: absolute; top: 35px; left: 452px; margin: 0; padding: 0; }
 #join-give li { list-style: none; float: left; margin-right: 18px; }
 #join-give li a { display: block; width: 109px; height: 53px; background: url('../img/join-give.png') no-repeat 0 0; }
 #join-give li:last-child a { background-position: -127px 0; }
 #join-give li:first-child a:hover { background-position: 0 -60px; }
 #join-give li:last-child a:hover { background-position: -127px -60px; }
 
-nav { height: 37px; padding: 0 50px; background-color: #2f2f2f; }
-nav li { display: block; float: left; width: 16%; height: 37px; line-height: 37px; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+nav { height: 30px; padding: 0 50px; background-color: #2f2f2f; }
+nav li { display: block; float: left; width: 16%; height: 30px; line-height: 30px; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 nav li a, nav li a:visited { display: block; text-decoration: none; color: #fff; font-weight: bold; font-size: 15px; width: 100%; height: 100%; }
 nav li a.active { background-color: #504c4c; color: #bfb931; }
 nav li a:hover { color: #bfb931; }
 
-#main { background: #2f2f2f url('../img/backgrounds/default.jpg') no-repeat top left; padding: 0; height: 603px; padding: 12px 20px; width: 1010px; overflow: auto; background-size: cover !important; }
+#main-viewport { overflow-x: hidden; overflow-y: auto; height: 502px; }
+#main { background: #2f2f2f url('../img/backgrounds/default.jpg') no-repeat top left; padding: 0; height: 586px; padding: 8px 20px; width: 1010px; overflow: auto; background-size: cover !important; }
 #main > h2 { background: transparent url(../img/page-icons.png) no-repeat 0 0; padding-top: 12px; padding-left: 60px; }
 
-footer { height: 73px; background: #434343 url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
+footer { height: 64px; background: #434343 url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
 footer a, footer a:visited { color: #bfb931; text-decoration: none; cursor: pointer; }
 footer a:hover { color: #fff; }
 footer div { float: right; text-align: right; }
-footer p { margin: 10px 0; }
+footer p { margin: 10px 0 0 0; }
 footer > p { margin-top: 40px; }
 
 #contact-dialog { padding: 0 25px; color: #bbb; }

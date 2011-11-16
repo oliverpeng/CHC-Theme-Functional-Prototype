@@ -1,6 +1,6 @@
 #main > h2 { background-position: 0 -224px; margin-bottom: 0; }
 
-#videos { width: 575px; height: 342px; margin-top: 20px; background-color: #beb931; padding: 15px 30px; overflow: hidden; }
+#videos { width: 575px; height: 342px; margin-top: 10px; background-color: #beb931; padding: 15px 30px; overflow: hidden; }
 #videos-container { position: relative; }
 #play { cursor: pointer; position: absolute; width: 189px; height: 107px; top: 50%; left: 50%; margin-top: -54px; margin-left: -95px; background: url(../img/media/play_button.png) no-repeat 0 0 transparent; z-index: 10; }
 #icon { width: 57px; height: 65px; margin: 20px auto; background: url(../img/media/play_icon.png) no-repeat 0 0 transparent; z-index: 15; opacity: 0.5; }
@@ -15,7 +15,7 @@
     border-radius: 4px; }
 #more_vids:hover { background-color: #393937; color: #fff; }
 
-#downloads { float: right; margin-right: 140px; margin-top: 20px; }
+#downloads { float: right; margin-right: 140px; margin-top: 10px; }
 #downloads h3, #downloads a { display: block; }
 #downloads a { width: 120px; margin-left: 20px; }
 
