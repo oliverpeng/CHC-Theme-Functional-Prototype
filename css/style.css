@@ -212,10 +212,11 @@ td { vertical-align: top; }
    Author: Oliver Peng
    ========================================================================== */
 html { background: #020202 url('../img/bg-tile-x.jpg') repeat-x top left; }
+html, body { height: 100%; }
 h2, h3, h4, h5, h6 { color: #484848; margin: 0; }
 h2 { text-transform: uppercase; font-size: 36px; margin-bottom: 10px;  }
 
-#container { width: 1050px; margin: 0 auto; }
+#container { width: 1050px; margin: 0 auto; min-height: 100%; position: relative; background-color: #cdbb8d; }
 
 header { height: 95px; padding: 10px 10px 0 25px; background: #454545 url('../img/bg-header.jpg') no-repeat top left; position: relative; }
 #logo { margin: 0; float: left; }
@@ -242,17 +243,18 @@ header { height: 95px; padding: 10px 10px 0 25px; background: #454545 url('../im
 #join-give li:first-child a:hover { background-position: 0 -60px; }
 #join-give li:last-child a:hover { background-position: -127px -60px; }
 
+#bottom { position: fixed; bottom: 0; width: 1050px; height: 94px; }
+
 nav { height: 30px; padding: 0 50px; background-color: #2f2f2f; }
 nav li { display: block; float: left; width: 16%; height: 30px; line-height: 30px; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 nav li a, nav li a:visited { display: block; text-decoration: none; color: #fff; font-weight: bold; font-size: 15px; width: 100%; height: 100%; }
 nav li a.active { background-color: #504c4c; color: #bfb931; }
 nav li a:hover { color: #bfb931; }
 
-#main-viewport { overflow-x: hidden; overflow-y: auto; height: 502px; }
-#main { background: #2f2f2f url('../img/backgrounds/default.jpg') no-repeat top left; padding: 0; height: 586px; padding: 8px 20px; width: 1010px; overflow: auto; background-size: cover !important; }
+#main { background: #2f2f2f url('../img/backgrounds/default.jpg') no-repeat top left; padding: 8px 20px; padding-bottom: 114px; /* so as to not be obstructed by #bottom */ width: 1010px; overflow: auto; background-size: cover !important; }
 #main > h2 { background: transparent url(../img/page-icons.png) no-repeat 0 0; padding-top: 12px; padding-left: 60px; }
 
-footer { height: 64px; background: #434343 url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
+footer {  height: 64px; background: #434343 url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
 footer a, footer a:visited { color: #bfb931; text-decoration: none; cursor: pointer; }
 footer a:hover { color: #fff; }
 footer div { float: right; text-align: right; }
