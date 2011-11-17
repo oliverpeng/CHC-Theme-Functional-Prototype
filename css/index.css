@@ -16,8 +16,8 @@ aside q { color: #373737; font-size: 48px; font-family: MuseoSans500, sans-serif
 aside q:before { content: "“"; color: #7c8624; font-family: Arial, sans-serif; }
 aside q:after { content: "”"; color: #7c8624; font-family: Arial, sans-serif; }
 
-#main { position: relative; padding: 0; height: 502px; width: 1050px; overflow: hidden; }
-#slide_nav { position: absolute; bottom: 13px; left: 57px; z-index: 100; background-color: rgba(255,255,255,0.6); padding: 10px 20px; -moz-border-radius: 24px; -webkit-border-radius: 24px; border-radius: 24px; border: 6px solid rgba(0,0,0,0.6); }
+#main { position: relative; padding: 0; padding-bottom: 114px; height: 502px; width: 1050px; overflow: hidden; }
+#slide_nav { position: absolute; bottom: 137px; left: 57px; z-index: 100; background-color: rgba(255,255,255,0.6); padding: 10px 20px; -moz-border-radius: 24px; -webkit-border-radius: 24px; border-radius: 24px; border: 6px solid rgba(0,0,0,0.6); }
 #slide_nav a { display: inline-block; width: 15px; height: 15px; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; margin-right: 7px; text-indent: -9999px; background-color: #2f2f2f; }
 #slide_nav a:last-child { margin-right: 0; }
 #slide_nav a:focus { outline: none; }

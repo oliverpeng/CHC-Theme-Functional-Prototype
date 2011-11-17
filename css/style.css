@@ -243,7 +243,7 @@ header { height: 95px; padding: 10px 10px 0 25px; background: #454545 url('../im
 #join-give li:first-child a:hover { background-position: 0 -60px; }
 #join-give li:last-child a:hover { background-position: -127px -60px; }
 
-#bottom { position: fixed; bottom: 0; width: 1050px; height: 94px; }
+#bottom { position: fixed; bottom: 0; width: 1050px; height: 94px; z-index: 100; }
 
 nav { height: 30px; padding: 0 50px; background-color: #2f2f2f; }
 nav li { display: block; float: left; width: 16%; height: 30px; line-height: 30px; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
