@@ -251,7 +251,7 @@ nav li a, nav li a:visited { display: block; text-decoration: none; color: #fff;
 nav li a.active { background-color: #504c4c; color: #bfb931; }
 nav li a:hover { color: #bfb931; }
 
-#main { background: transparent url('../img/backgrounds/default-3.png') no-repeat top left; padding: 8px 20px; padding-bottom: 114px; /* so as to not be obstructed by #bottom */ width: 940px; overflow: auto; }
+#main { background: transparent url('../img/backgrounds/default-3.png') no-repeat top left; padding: 8px 20px; padding-bottom: 114px; /* so as to not be obstructed by #bottom */ width: 940px; min-height: 599px; overflow: auto; }
 #main > h2 { background: transparent url(../img/page-icons.png) no-repeat 0 0; padding-top: 12px; padding-left: 60px; }
 
 footer {  height: 64px; background: #434343 url('../img/bg-footer.jpg') no-repeat top left; padding: 1px 12px; font-weight: bold; color: #fff; background-size: cover; }
