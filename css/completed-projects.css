@@ -1,2 +1,6 @@
-#main { background: #2f2f2f url('../img/backgrounds/completed-projects.jpg') no-repeat top left; }
+#main {
+    background-image: url('../img/backgrounds/completed-projects.png'), url('../img/backgrounds/texture.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
 #main > h2 { background-position: 0 -392px; }

@@ -1,4 +1,8 @@
-#main { background: url('../img/backgrounds/who-we-are.jpg') no-repeat top left; font-size: 0.85em; }
+#main { font-size: 0.85em;
+    background-image: url('../img/backgrounds/who-we-are.png'), url('../img/backgrounds/texture.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
 #main > h2 { background-position: 0 -56px; margin-bottom: 0; }
 
 .fl { float: left; }
@@ -10,7 +14,7 @@
 .textbubble .overlay { background-color: #e0dd84; padding: 10px; }
 .textbubble .greybubble { margin-left: 10px; }
 
-#statement { background-image: none; }
+#statement { background-image: none; cursor: pointer; }
 #statement-dialog { font-size: 14px; }
 #statement-dialog .overview { padding: 0 55px 20px 45px; }
 #statement-dialog h2 { color: #fff; font-size: 23px; margin: 0; margin-bottom: 20px; }
@@ -29,3 +33,5 @@ dt { color: #fff; clear: left; }
 dt:after { content: ":"; }
 dt, dd { float: left; }
 dd { margin: 0; margin-left: 10px; }
+
+#faq { cursor: pointer; }

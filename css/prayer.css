@@ -5,7 +5,8 @@
 
 #intro { width: 600px; }
 
-#read { background-image: none; }
+#read { background-image: none; cursor: pointer; }
+#read:hover { color: #fff; }
 
 #dialog { padding: 0 15px 15px 15px; }
 #map { float: left; width: 757px; background-color: #ccc; border: 5px solid #ccc; color: #000;

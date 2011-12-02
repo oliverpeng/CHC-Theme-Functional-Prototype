@@ -1,4 +1,8 @@
-#main { background: url('../img/backgrounds/what-we-do.png') no-repeat top left; }
+#main { 
+    background-image: url('../img/backgrounds/what-we-do.png'), url('../img/backgrounds/texture.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
 #main > h2 { background-position: 0 -112px; }
 
 
