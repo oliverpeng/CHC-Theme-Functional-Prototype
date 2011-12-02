@@ -12,7 +12,7 @@
        More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Churches Helping Churches - Join Us</title>
+  <title>Churches Helping Churches - Sign Up</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -25,7 +25,7 @@
   <!-- CSS concatenated and minified via ant build script-->
   <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/join.css">
+  <link rel="stylesheet" href="css/signup.css">
   <!-- end CSS-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -54,115 +54,94 @@
 		<li class="ir"><a href="give.html">Give Now</a></li>
 	  </ul>
     </header>
-	<section id="main">
-	  <h2>Join Us</h2>
+	<article id="main">
+	  <h2>Sign Up</h2>
 	  
-	  <div id="tabs">
-		<ul>
-			<li><a href="#signup">Sign Up</a></li>
-			<li><a href="#get-involved">Ways To Get Involved</a></li>
-			<li><a href="#affiliates">Affiliates</a></li>
-		</ul>
-		<article id="signup">
-			<hgroup>
-				<h2 class="visuallyhidden">Sign Up</h2>
-				<h3>Everything you need to know...</h3>
-			</hgroup>
-			<div class="clearfix">
-				<div class="leftcol">
-					<h4>For Pastors</h4>
-					<iframe width="368" height="217" src="http://www.youtube.com/embed/uqt9FniOvv8?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="rightcol">
-					<h4>For Church Members</h4>
-					<iframe width="368" height="217" src="http://www.youtube.com/embed/uqt9FniOvv8?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="centered">
-				<p><a class="redbutton" href="signup.html">Sign up now!</a></p>
-				<p>INFO KIT: <a href="">DOWNLOAD</a> &nbsp;<a href="">SEND ME ONE</a></p>
-			</div>
-			
-		</article>
-		<article id="get-involved">
-			<h2 class="visuallyhidden">Ways to Get Involved</h2>
-			<div class="clearfix">
-				<div class="leftcol">
-					<a class="redbutton" href="">Sign Up</a>
-					<a class="redbutton" href="give.html">Give</a>
-					<a class="greenbutton" href="prayer.html">Pray Online</a>
-					<a class="greenbutton" href="">Send Prayer Book</a>
-					<a class="greenbutton" href="">Experience CHC Live</a>
-					<a class="greenbutton" href="assets/Church-to-Church_Executive Summary_2.0.pdf" target="_blank">Partner with a Church</a>
-				</div>
-				<div class="rightcol">
-					<h3 class="greybubble">Spread the Word</h3>
-					<div class="textbubble-outside">
-						<div class="textbubble">
-							<ul class="spreadword">
-								<li><a href="https://www.facebook.com/ChurchesHelpingChurches" title="Our Facebook Page" target="_blank">Like Us</a></li>
-								<li><a href="http://twitter.com/#!/churcheshelping" title="Our Twitter Page" target="_blank">Follow Us</a></li>
-								<li><label for="email">Stay Updated</label><br>
-								<input type="email" id="email" name="email" placeholder="Email Address..." /><input type="submit" value="Subscribe"></li>
-								<li><a href="media.html">Download CHC media</a></li>
-							</ul>
-						</div>
-					</div>
-					<h3 class="greybubble">Volunteer</h3>
-					<div class="textbubble-outside volunteer">
-						<div class="textbubble">
-							<p>
-								Want to join the CHC team?<br>
-								Volunteer opportunites are currently available for:
-							</p>
-								<ul>
-									<li>Professional Photography/Videography</li>
-								</ul>
-							<p>
-								Please contact: <span id="contact"></span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</article>
-		<article id="affiliates">
-			<h2 class="visuallyhidden">Affiliates</h2>
-			<table>
-				<tr>
-					<td><a href="http://www.acts29network.org/" title="Acts 29 Website" target="_blank"><img src="img/joinus/acts29logo.jpg" alt="Acts 29 Network Logo"></a></td>
-					<td>
-						<a href="http://www.acts29network.org/" title="Acts 29 Website" target="_blank">
-							<span class="highlight">Acts 29 Network</span><br>
-							http://www.acts29network.org/
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="http://www.harvestbiblefellowship.org/" title="Harvest Bible Fellowship" target="_blank">
-							<img src="img/joinus/harvestlogo.png" alt="Harvest Bible Fellowship Logo">
-						</a>
-					</td>
-					<td>
-						<a href="http://www.harvestbiblefellowship.org/" title="Harvest Bible Fellowship" target="_blank">
-							<span class="highlight">Harvest Bible Fellowship</span><br>
-							http://www.harvestbiblefellowship.org/
-						</a>
-					</td>
-				</tr>
-			</table>
-		</article>
-	  </div>
-	</section>
+      <form class="clearfix">
+        <div id="info">
+          <h3>1. Please fill out your information</h3>
+          
+          <div class="clearfix">
+            <div class="fname">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+            <div class="lname">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname">
+            </div>
+          </div>
+          
+          <label for="city">City</label>
+          <input type="text" id="city" name="city">
+          
+          <div class="clearfix">
+            <div class="state">
+              <label for="state">State / Province</label>
+              <input type="text" id="state" name="state">
+            </div>
+            <div class="country">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country">
+            </div>
+          </div>
+            
+          <label for="email">Email Address <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+            
+          <label for="church">Church Name</label>
+          <input type="text" id="church" name="church">
+            
+          <input type="checkbox" id="is_pastor" name="is_pastor"><label for="is_pastor">Check here if you are a pastor.</label>
+            
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website">
+            
+          <p>* indicates required field</p>
+        </div>
+        <div id="email-pref">
+          <h3>2. Set your email preferences</h3>
+          
+          <p>
+            As a Churches Helping Churches partner, you play a critical role in
+            the health and impact of our ministry.  Below are email preferences
+            that will help us keep you informed. Select what’s right for you,
+            and we’ll do the rest.
+          </p>
+          
+          <ul>
+            <li class="clearfix">
+              <input type="radio" name="prefer" value="ALL" id="prefer-0">
+              <label for="prefer-0">Please keep me on your standard newsletter list for complete coverage of the Churches Helping Churches movement.</label>
+            </li>
+            <li class="clearfix">
+              <input type="radio" name="prefer" value="Major Updates" id="prefer-1">
+              <label for="prefer-1">Please keep me up-to-date on key Churches Helping Churches projects, events, and milestones.</label>
+            </li>
+            <li class="clearfix">
+              <input type="radio" name="prefer" value="New Crises" id="prefer-2">
+              <label for="prefer-2">Please only contact me with major news related to new crises</label>
+            </li>
+            <li class="clearfix">
+              <input type="radio" name="prefer" value="None" id="prefer-3">
+              <label for="prefer-3">Please do not send any emails to me.</label>
+            </li>
+          </ul>
+          
+          <input type="submit" value="SIGN UP" class="greenbutton">
+        </div>
+      </form>
+      
+      
+	</article>
 	<div id="bottom">
 	  <nav>
 		<h2 hidden>Main Navigation</h2>
 		<ul>
 		  <li><a href="index.html">Home</a></li>
-		  <li><a href="join.html" class="active">Join Us</a></li>
+		  <li><a href="join.html">Join Us</a></li>
 		  <li><a href="what-we-do.html">What We Do</a></li>
-		  <li><a href="who-we-are.html">Who We Are</a></li>
+		  <li><a href="who-we-are.html" class="active">Who We Are</a></li>
 		  <li><a href="churches.html">The Churches</a></li>
 		  <li><a href="">Blog</a></li>
 		</ul>
@@ -207,10 +186,10 @@
 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
-  <script src="js/libs/jquery.ba-hashchange.min.js"></script>
+  <script src="js/libs/jquery.tinyscrollbar.js"></script>
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
-  <script defer src="js/join.js"></script>
+  <script defer src="js/who-we-are.js"></script>
   <!-- end scripts-->
 
 	

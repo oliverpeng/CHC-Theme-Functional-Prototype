@@ -1,0 +1,30 @@
+form { width: 910px; padding: 20px 15px; background-color: #2f2f2f; color: #fff; }
+form h3 { color: #dcd867; font-weight: normal; font-size: 18px; margin-bottom: 10px; }
+.required { color: #dcd867; }
+
+#info, #email-pref { width: 434px; }
+#info { float: left; }
+#email-pref { float: right; }
+
+label { display: block; margin-bottom: 3px; margin-top: 7px; }
+input[type=text], input[type=email] { width: 100%; }
+
+.fname { width: 226px; float: left; }
+.lname { width: 193px; float: right; }
+
+.state { width: 186px; float: left; }
+.country { width: 233px; float: right; }
+
+#is_pastor { margin-top: 15px; margin-right: 10px; }
+label[for=is_pastor] { display: inline; }
+
+#info p { color: #dcd867; margin-top: 12px; }
+
+#email-pref p { line-height: 25px; }
+#email-pref ul { list-style: none; padding-left: 25px; margin-bottom: 6px; }
+#email-pref li { margin-top: 12px; }
+#email-pref label { font-size: 13px; margin: 0; float: right; width: 382px; margin-top: -1px; }
+
+input[type=radio] { margin-right: 6px; float: left; }
+
+input[type=submit] { padding-left: 40px; padding-right: 40px; margin-left: 27px; }
