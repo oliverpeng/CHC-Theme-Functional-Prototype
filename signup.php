@@ -61,12 +61,8 @@
 	  $error = false;
 	  $errorMsg;
 	  
-	  // Validation
-	  if (isset($_POST['submit'])) {
-		echo '<pre>';
-		print_r($_POST);
-		echo '</pre>';
-		
+	  if (isset($_POST['submit'])) {	
+		// Validation
 		$email = $_POST['email'];
 		if (!$email) {
 		  $error = true;
@@ -81,6 +77,27 @@
 		  if (!$error && strlen($email) > 100){
 			$error = true;
 			$errorMsg = 'Address is too long';
+		  }
+		}
+		
+		if (!$error) {
+		  require_once('includes/MCAPI.class.php');
+		  $api = new MCAPI('420524bc6e7e2495ddd87a95dd48a3dd-us1');
+		  $list_id = '9b182b13d8';
+		  $merge_vars = array('FNAME'=>$_POST['fname'], 'LNAME'=>$_POST['lname'],
+						  'CITY'=>$_POST['city'], 'STATE'=>$_POST['state'],
+						  'CHURCH'=>$_POST['church'], 'WEBSITE'=>$_POST['website'],
+						  'PREFER'=>$_POST['prefer']);
+		  if(isset($_POST['is_pastor'])) {
+			$merge_vars['PASTOR'] = 1;
+		  }
+		  
+		  if($api->listSubscribe($list_id, $_POST['email'], $merge_vars) === true) {
+			// redirect
+			echo 'Success! Check your email to confirm sign up.';
+		  }else{
+			// An error ocurred, return error message	
+			echo 'Error: ' . $api->errorMessage;
 		  }
 		}
 	  }
@@ -142,7 +159,7 @@
           
           <ul>
             <li class="clearfix">
-              <input type="radio" name="prefer" value="ALL" id="prefer-0" <?php if(isset($_POST['prefer']) && $_POST['prefer'] == 'ALL') { echo 'checked="checked"'; } ?>>
+              <input type="radio" name="prefer" value="All" id="prefer-0" <?php if(!isset($_POST['prefer']) || $_POST['prefer'] == 'All') { echo 'checked="checked"'; } ?>>
               <label for="prefer-0">Please keep me on your standard newsletter list for complete coverage of the Churches Helping Churches movement.</label>
             </li>
             <li class="clearfix">
