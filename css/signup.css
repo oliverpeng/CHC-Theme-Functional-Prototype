@@ -7,15 +7,16 @@ form h3 { color: #dcd867; font-weight: normal; font-size: 18px; margin-bottom: 1
 #email-pref { float: right; }
 
 label { display: block; margin-bottom: 3px; margin-top: 7px; }
+.error { font-size: 13px; color: #ff3300; }
+
 input[type=text], input[type=email] { width: 100%; }
 
 .fname { width: 226px; float: left; }
 .lname { width: 193px; float: right; }
-
 .state { width: 186px; float: left; }
 .country { width: 233px; float: right; }
 
-#is_pastor { margin-top: 15px; margin-right: 10px; }
+#is_pastor { margin-top: 15px; margin-right: 5px; }
 label[for=is_pastor] { display: inline; }
 
 #info p { color: #dcd867; margin-top: 12px; }

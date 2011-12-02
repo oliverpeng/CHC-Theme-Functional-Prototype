@@ -56,46 +56,77 @@
     </header>
 	<article id="main">
 	  <h2>Sign Up</h2>
+	  <?php
 	  
-      <form class="clearfix">
+	  $error = false;
+	  $errorMsg;
+	  
+	  // Validation
+	  if (isset($_POST['submit'])) {
+		echo '<pre>';
+		print_r($_POST);
+		echo '</pre>';
+		
+		$email = $_POST['email'];
+		if (!$email) {
+		  $error = true;
+		  $errorMsg = 'Please enter an email address';
+		} else {
+		  $pattern = "/^([a-zA-Z0-9])+([.a-zA-Z0-9_-])*@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-]+)+/";
+		  if (!preg_match($pattern, $email)) {
+            $error = true;
+			$errorMsg = 'Please enter a valid email address';
+		  }
+		  
+		  if (!$error && strlen($email) > 100){
+			$error = true;
+			$errorMsg = 'Address is too long';
+		  }
+		}
+	  }
+	  
+	  ?>
+      <form class="clearfix" method="post" >
         <div id="info">
           <h3>1. Please fill out your information</h3>
           
           <div class="clearfix">
             <div class="fname">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname">
+              <input type="text" id="fname" name="fname" value="<?php echo $_POST['fname']?>">
             </div>
             <div class="lname">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname">
+              <input type="text" id="lname" name="lname" value="<?php echo $_POST['lname']?>">
             </div>
           </div>
           
           <label for="city">City</label>
-          <input type="text" id="city" name="city">
+          <input type="text" id="city" name="city" value="<?php echo $_POST['city']?>">
           
           <div class="clearfix">
             <div class="state">
               <label for="state">State / Province</label>
-              <input type="text" id="state" name="state">
+              <input type="text" id="state" name="state" value="<?php echo $_POST['state']?>">
             </div>
             <div class="country">
               <label for="country">Country</label>
-              <input type="text" id="country" name="country">
+              <input type="text" id="country" name="country" value="<?php echo $_POST['country']?>">
             </div>
           </div>
             
           <label for="email">Email Address <span class="required">*</span></label>
-          <input type="email" id="email" name="email" required>
-            
+          <input type="text" id="email" name="email" value="<?php echo $_POST['email']?>">
+		  <span class="error"><?php if ($error) { echo $errorMsg; } ?></span>
+		  
           <label for="church">Church Name</label>
-          <input type="text" id="church" name="church">
+          <input type="text" id="church" name="church" value="<?php echo $_POST['church']?>">
             
-          <input type="checkbox" id="is_pastor" name="is_pastor"><label for="is_pastor">Check here if you are a pastor.</label>
+          <input type="checkbox" id="is_pastor" name="is_pastor" <?php if(isset($_POST['is_pastor'])) { echo 'checked'; } ?>>
+		  <label for="is_pastor">Check here if you are a pastor.</label>
             
           <label for="website">Website</label>
-          <input type="text" id="website" name="website">
+          <input type="text" id="website" name="website" value="<?php echo $_POST['website']?>">
             
           <p>* indicates required field</p>
         </div>
@@ -111,24 +142,24 @@
           
           <ul>
             <li class="clearfix">
-              <input type="radio" name="prefer" value="ALL" id="prefer-0">
+              <input type="radio" name="prefer" value="ALL" id="prefer-0" <?php if(isset($_POST['prefer']) && $_POST['prefer'] == 'ALL') { echo 'checked="checked"'; } ?>>
               <label for="prefer-0">Please keep me on your standard newsletter list for complete coverage of the Churches Helping Churches movement.</label>
             </li>
             <li class="clearfix">
-              <input type="radio" name="prefer" value="Major Updates" id="prefer-1">
+              <input type="radio" name="prefer" value="Major Updates" id="prefer-1" <?php if(isset($_POST['prefer']) && $_POST['prefer'] == 'Major Updates') { echo 'checked="checked"'; } ?>>
               <label for="prefer-1">Please keep me up-to-date on key Churches Helping Churches projects, events, and milestones.</label>
             </li>
             <li class="clearfix">
-              <input type="radio" name="prefer" value="New Crises" id="prefer-2">
+              <input type="radio" name="prefer" value="New Crises" id="prefer-2" <?php if(isset($_POST['prefer']) && $_POST['prefer'] == 'New Crises') { echo 'checked="checked"'; } ?>>
               <label for="prefer-2">Please only contact me with major news related to new crises</label>
             </li>
             <li class="clearfix">
-              <input type="radio" name="prefer" value="None" id="prefer-3">
+              <input type="radio" name="prefer" value="None" id="prefer-3" <?php if(isset($_POST['prefer']) && $_POST['prefer'] == 'None') { echo 'checked="checked"'; } ?>>
               <label for="prefer-3">Please do not send any emails to me.</label>
             </li>
           </ul>
           
-          <input type="submit" value="SIGN UP" class="greenbutton">
+          <input type="submit" name="submit" value="SIGN UP" class="greenbutton">
         </div>
       </form>
       
