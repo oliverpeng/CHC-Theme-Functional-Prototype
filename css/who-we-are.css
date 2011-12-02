@@ -1,8 +1,4 @@
-#main { font-size: 0.85em;
-    background-image: url('../img/backgrounds/who-we-are.png'), url('../img/backgrounds/texture.jpg');
-    background-repeat: no-repeat;
-    background-position: left top;
-}
+#main { font-size: 0.85em; background-image: url('../img/backgrounds/who-we-are.jpg'), url('../img/backgrounds/texture.jpg'); }
 #main > h2 { background-position: 0 -56px; margin-bottom: 0; }
 
 .fl { float: left; }

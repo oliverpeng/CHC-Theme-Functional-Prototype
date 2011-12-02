@@ -249,9 +249,9 @@ nav li a.active { background-color: #504c4c; color: #bfb931; }
 nav li a:hover { color: #bfb931; }
 
 #main { padding: 8px 20px 35px; width: 940px; overflow: auto;
-    background-image: url('../img/backgrounds/default.png'), url('../img/backgrounds/texture.jpg');
+    background-image: url('../img/backgrounds/default.jpg'), url('../img/backgrounds/texture.jpg');
     background-repeat: no-repeat;
-    background-position: left top, 0 105px;
+    background-position: left top;
     background-color: #CDBB8D;
 }
 #main > h2 { background: transparent url(../img/page-icons.png) no-repeat 0 0; padding-top: 12px; padding-left: 60px; }
