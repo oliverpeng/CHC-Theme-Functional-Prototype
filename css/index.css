@@ -16,8 +16,8 @@ aside q { color: #373737; font-size: 48px; font-family: MuseoSans500, sans-serif
 aside q:before { content: "“"; color: #7c8624; font-family: Arial, sans-serif; }
 aside q:after { content: "”"; color: #7c8624; font-family: Arial, sans-serif; }
 
-#main { position: relative; padding: 0; padding-bottom: 114px; height: 502px; width: 1050px; overflow: hidden; }
-#slide_nav { position: absolute; bottom: 137px; left: 57px; z-index: 100; background-color: rgba(255,255,255,0.6); padding: 10px 20px; -moz-border-radius: 24px; -webkit-border-radius: 24px; border-radius: 24px; border: 6px solid rgba(0,0,0,0.6); }
+#main { position: relative; padding: 0; height: 585px; width: 980px; overflow: hidden; background-image: none; background-color: transparent; }
+#slide_nav { position: absolute; bottom: 90px; left: 57px; z-index: 100; background-color: rgba(255,255,255,0.6); padding: 10px 20px; -moz-border-radius: 24px; -webkit-border-radius: 24px; border-radius: 24px; border: 6px solid rgba(0,0,0,0.6); }
 #slide_nav a { display: inline-block; width: 15px; height: 15px; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; margin-right: 7px; text-indent: -9999px; background-color: #2f2f2f; }
 #slide_nav a:last-child { margin-right: 0; }
 #slide_nav a:focus { outline: none; }
@@ -27,13 +27,13 @@ aside q:after { content: "”"; color: #7c8624; font-family: Arial, sans-serif; 
   background-image: -moz-linear-gradient(center top, #a5af4b 10%, #7c8624 100%);
 }
 
-#slides > article { height: 627px; padding: 0; width: 1050px; }
+#slides > article { height: 585px; padding: 0; width: 980px; }
 .slide2, .slide3, .slide4 { display: none; }
 
 .slide1 { background: url('../img/backgrounds/home/slide1.jpg') no-repeat top left; }
-.slide1 > div { width: 500px; float: left; }
+.slide1 > div { width: 455px; float: left; }
 .slide1 div:nth-child(1) { margin: 127px 0 0 40px; text-align: center; }
-.slide1 div:nth-child(2) { margin: 120px 0 0 10px; }
+.slide1 div:nth-child(2) { margin: 115px 0 0 0; }
 .slide1 h3 { font-size: 60px; line-height: 90px; color: #fff; margin: 0; margin-bottom: 40px; }
 .slide1 a { font-size: 24px; margin-top: 190px; }
 .slide1 iframe { border: 9px solid #beb931; }
@@ -48,7 +48,7 @@ aside q:after { content: "”"; color: #7c8624; font-family: Arial, sans-serif; 
 .slide2 aside { position: absolute; top: 47px; left: 655px; }
 
 .slide3 { background: url('../img/backgrounds/home/slide3.jpg') no-repeat top left; position: relative; }
-.slide3 .rightcol { width: 369px; position: absolute; top: 37px; left: 648px; }
+.slide3 .rightcol { width: 369px; position: absolute; top: 37px; left: 597px; }
 .slide3 .greenbutton { float: right; }
 .slide3 aside { position: absolute; top: 70px; left: 51px; }
 
