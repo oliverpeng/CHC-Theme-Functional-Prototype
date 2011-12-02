@@ -54,6 +54,17 @@
 		<li class="ir"><a href="give.html">Give Now</a></li>
 	  </ul>
     </header>
+	<nav>
+	  <h2 hidden>Main Navigation</h2>
+	  <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="join.html">Join Us</a></li>
+		<li><a href="what-we-do.html">What We Do</a></li>
+		<li><a href="who-we-are.html" class="active">Who We Are</a></li>
+		<li><a href="churches.html">The Churches</a></li>
+		<li><a href="">Blog</a></li>
+	  </ul>
+	</nav>
 	<article id="main">
 	  <h2>Sign Up</h2>
 	  <?php
@@ -182,25 +193,12 @@
       
       
 	</article>
-	<div id="bottom">
-	  <nav>
-		<h2 hidden>Main Navigation</h2>
-		<ul>
-		  <li><a href="index.html">Home</a></li>
-		  <li><a href="join.html">Join Us</a></li>
-		  <li><a href="what-we-do.html">What We Do</a></li>
-		  <li><a href="who-we-are.html" class="active">Who We Are</a></li>
-		  <li><a href="churches.html">The Churches</a></li>
-		  <li><a href="">Blog</a></li>
-		</ul>
-	  </nav>
-	  <footer>
-		<div>
-		  <p><a id="footer-contact">Contact Us</a></p><p>&copy; CHURCHES<span class="highlight">HELPING</span>CHURCHES</p>
-		</div>
-		<p>Co-founders: <a href="http://jamesmacdonald.com/" target="_blank">jamesmacdonald.com</a> & <a href="http://pastormark.tv/" target="_blank">pastormark.tv</a></p>
-	  </footer>
-	</div>
+	<footer>
+	  <div>
+		<p><a id="footer-contact">Contact Us</a></p><p>&copy; CHURCHES<span class="highlight">HELPING</span>CHURCHES</p>
+	  </div>
+	  <p>Co-founders: <a href="http://jamesmacdonald.com/" target="_blank">jamesmacdonald.com</a> & <a href="http://pastormark.tv/" target="_blank">pastormark.tv</a></p>
+	</footer>
   </div> <!--! end of #container -->
   <div class="dialog" id="contact-dialog">
     <h4>Contact Information</h4>
